@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Course Home Page</title>
+    <meta name="description"
+        content="Assignment portal for WDD 231 focusing on responsive design and JavaScript filtering.">
+    <meta name="author" content="Adelso Tzep">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.png" alt="Adelso Tzep Logo" width="50" height="50">
+            <span>Adelso Tzep</span>
+        </div>
+        <button id="menu" aria-label="Toggle Menu"></button>
+    </header>
+    <nav>
+        <ul id="animatenav">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="project/index.html">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="top-content">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="card-body">
+                    <p>Hello! My name is Adelso Tzep. Growing up in Guatemala City, I developed a deep love for
+                        languages
+                        and culture, leading me to become fluent in K'iche', Spanish, English, and Portuguese. I am
+                        currently a student at
+                        BYU-Idaho via BYU-Pathway Worldwide, where I am working toward my Bachelor’s degree.</p>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Student Photo</h2>
+                <div class="card-body">
+                    <img src="images/adelso-tzep.webp" alt="Profile picture of Adelso Tzep">
+                </div>
+            </section>
+        </div>
+        <section class="courses card">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-container"></div>
+            <p id="total-credits"></p>
+        </section>
+    </main>
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/adelsolorenzohmi-cloud" target="_blank">
+                <img src="images/github.svg" alt="GitHub Logo">
+            </a>
+            <a href="https://www.linkedin.com/in/adelso-tzep-751b15388/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn Logo">
+            </a>
+        </div>
+        <p>&copy;<span id="currentyear"></span> | Adelso Tzep | Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

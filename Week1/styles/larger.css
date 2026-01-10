@@ -1,0 +1,39 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /* Hide hamburger on desktop */
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 65px auto;
+    }
+
+    /* Force navigation to show on desktop */
+    .navigation {
+        display: block;
+        background: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        /* Display items horizontally */
+    }
+
+    .navigation a {
+        border: none;
+        padding: 1rem 1.5rem;
+    }
+
+    .navigation a:hover {
+        background-color: #ddd;
+    }
+}

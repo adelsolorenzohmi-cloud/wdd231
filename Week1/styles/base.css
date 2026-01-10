@@ -1,0 +1,81 @@
+/*************************** SITE WIDE ***************************/
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+/*************************** HEADER ***************************/
+header {
+    display: grid;
+    /* Column widths: Logo (65px), Title (auto), Hamburger (44px) */
+    grid-template-columns: 65px auto 44px;
+    padding: 10px;
+    align-items: center;
+    border-bottom: solid 1px #ddd;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #3D405B;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/*************************** NAVIGATION ***************************/
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #3D405B;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* Hide navigation by default on small screens */
+.navigation {
+    display: none;
+    background-color: #eee;
+}
+
+/* Show when button is clicked */
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 1.2rem;
+    /* Touch friendly height */
+    text-decoration: none;
+    color: #3D405B;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Wayfinding: Current page styling */
+.current {
+    background-color: #3D405B;
+}
+
+.current a {
+    color: white;
+}

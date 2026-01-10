@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#menu {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+nav {
+    background-color: #34495e;
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a.active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+main {
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-body img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: inline-block;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.filters button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #eee;
+    border: 1px solid #ccc;
+}
+
+#course-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.course-item {
+    background: #ddd;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.course-item.completed {
+    background-color: #d4edda;
+    border-left: 8px solid #28a745;
+}
+
+/* --- FOOTER & SOCIALS --- */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.socials {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials img {
+    width: 35px;
+    height: auto;
+    filter: invert(1);
+    /* Turns black icons white for the dark footer */
+    transition: transform 0.2s;
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+}
