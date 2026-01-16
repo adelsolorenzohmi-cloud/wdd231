@@ -1,0 +1,20 @@
+[
+    {
+        "name": "ID WEB",
+        "address": "2115 S Vista Avenue, Boise, ID 83705",
+        "phone": "(208) 342-9386",
+        "website": "https://idahowebsites.com/",
+        "image": "idweb.png",
+        "membership": 3,
+        "tagline": "Innovative Design for the Web"
+    },
+    {
+        "name": "Surge Web Design",
+        "address": "4072 E Arch Drive, Meridian, ID 83646",
+        "phone": "(208) 631-0640",
+        "website": "https://surgewebdesign.com/",
+        "image": "surge.png",
+        "membership": 2,
+        "tagline": "Ride the Wave of Success"
+    }
+]
