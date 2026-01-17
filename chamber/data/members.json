@@ -4,7 +4,7 @@
         "address": "Caserío Pasac, Nahualá, Sololá",
         "phone": "+502 4890-1234",
         "website": "https://cooperativanahuala.com.gt",
-        "image": "nahuala_coop.png",
+        "image": "logo-cooperativa.png",
         "membership": 3,
         "tagline": "Café Orgánico de Altura"
     },
@@ -13,7 +13,7 @@
         "address": "Barrio Centro, Nahualá, Sololá",
         "phone": "+502 5544-6789",
         "website": "https://nawalestereo.com",
-        "image": "nawal_radio.png",
+        "image": "nawal-estereo-logo.webp",
         "membership": 3,
         "tagline": "La Voz de la Cultura Kʼicheʼ"
     },
@@ -22,7 +22,7 @@
         "address": "Calle Principal, Sector 2, Nahualá",
         "phone": "+502 3321-5566",
         "website": "https://nahualatextiles.org.gt",
-        "image": "weaving_assoc.png",
+        "image": "textil-logo.png",
         "membership": 2,
         "tagline": "Arte y Tradición en Cada Tejido"
     },
@@ -31,7 +31,7 @@
         "address": "02 Avenida, Zona 1, Nahualá",
         "phone": "+502 7760-4321",
         "website": "https://eltesorodeoro.com.gt",
-        "image": "tesoro_oro.png",
+        "image": "copeoro-logo.jpg",
         "membership": 2,
         "tagline": "Ahorro y Crédito para el Desarrollo"
     },
@@ -40,7 +40,7 @@
         "address": "Km 157 Carretera Interamericana, Nahualá",
         "phone": "+502 4012-9876",
         "website": "https://comedorverapaces.gt",
-        "image": "comedor.png",
+        "image": "comedor-logo.png",
         "membership": 1,
         "tagline": "El Sabor Auténtico de la Montaña"
     },
@@ -49,7 +49,7 @@
         "address": "Terminal de Buses, Nahualá, Sololá",
         "phone": "+502 5877-1122",
         "website": "https://transportesnahuala.gt",
-        "image": "bus.png",
+        "image": "transporte-logo.jpg",
         "membership": 1,
         "tagline": "Conectando al Altiplano"
     },
@@ -58,7 +58,7 @@
         "address": "Canton Patzite, Zona 0, Nahualá",
         "phone": "+502 4566-0099",
         "website": "https://ferreteriaprogreso.com.gt",
-        "image": "ferreteria.png",
+        "image": "ferreteria-logo.png",
         "membership": 2,
         "tagline": "Construyendo el Futuro de Sololá"
     }
