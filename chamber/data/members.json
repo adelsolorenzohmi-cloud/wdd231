@@ -16,5 +16,50 @@
         "image": "surge.png",
         "membership": 2,
         "tagline": "Ride the Wave of Success"
+    },
+    {
+        "name": "Nahualá Textiles",
+        "address": "Calle Principal, Nahualá, Sololá",
+        "phone": "(502) 7761-1234",
+        "website": "https://nahualatextiles.com",
+        "image": "textiles.png",
+        "membership": 1,
+        "tagline": "Traditional Maya Weaving"
+    },
+    {
+        "name": "Sololá Coffee Co.",
+        "address": "12 Ave 4-50, Panajachel, Sololá",
+        "phone": "(502) 2333-4455",
+        "website": "https://sololacoffee.gt",
+        "image": "coffee.png",
+        "membership": 3,
+        "tagline": "Best Highland Beans"
+    },
+    {
+        "name": "Maya Tech Solutions",
+        "address": "Barrio Centro, Nahualá",
+        "phone": "(502) 5544-3322",
+        "website": "https://mayatech.com",
+        "image": "tech.png",
+        "membership": 2,
+        "tagline": "Connecting the Highlands"
+    },
+    {
+        "name": "Lake Atitlán Tours",
+        "address": "Santander Street, Panajachel",
+        "phone": "(502) 4411-9988",
+        "website": "https://atitlantours.com",
+        "image": "tours.png",
+        "membership": 1,
+        "tagline": "Experience the Magic"
+    },
+    {
+        "name": "Green Valley Agriculture",
+        "address": "Km 158 Interamericana, Nahualá",
+        "phone": "(502) 9988-7766",
+        "website": "https://greenvalley.gt",
+        "image": "agri.png",
+        "membership": 2,
+        "tagline": "Organic Highland Produce"
     }
 ]
