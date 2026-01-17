@@ -1,14 +1,3 @@
-/* Universal fix for horizontal scroll */
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    font-family: 'Open Sans', sans-serif;
-}
-
-/* Desktop view (700px and up) */
 @media (min-width: 700px) {
     #menu-toggle {
         display: none;
@@ -16,84 +5,44 @@ body {
 
     header {
         background-color: #166534;
-        width: 100%;
-        margin: 0;
-        padding: 0;
     }
 
-    .nav-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0.5rem 4rem 0.5rem 2rem;
-        box-sizing: border-box;
-    }
-
-    .brand {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        flex-shrink: 0;
-    }
-
-    .brand img {
-        height: 60px;
-        width: auto;
-        background-color: white;
-        padding: 2px;
-        border-radius: 4px;
-    }
-
-    /* FIX: Force brand title to white to pass 7.13:1 ratio */
     .brand h1 {
+        /* FIX: Ensure title is white on desktop */
         color: #ffffff !important;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.5rem;
         margin: 0;
-        white-space: nowrap;
     }
 
     #nav-list {
         display: flex;
         flex-direction: row;
-        list-style: none;
-        padding: 0;
-        margin: 0;
         gap: 40px;
+        list-style: none;
     }
 
     #nav-list li a {
-        padding: 0.8rem 1rem;
-        display: block;
         color: #ffffff !important;
         text-decoration: none;
-        font-size: 1.2rem;
-        font-weight: 500;
-        transition: background-color 0.3s;
+        padding: 0.8rem 1rem;
     }
 
-    #nav-list li a:hover {
-        background-color: #14532d;
-    }
-
-    /* FIX: Background changed to a darker green to pass contrast with white text */
+    /* FIX: Adjusted active link background to pass contrast */
     #nav-list li a.active {
         background-color: #064e3b !important;
         color: #ffffff !important;
         border-radius: 4px;
     }
 
-    .directory-header {
-        width: 100%;
-        text-align: center;
-        margin: 3rem 0;
-    }
-
-    .directory-header h2 {
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
+    /* Restoration of your original layout properties below */
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0.5rem 2rem;
     }
 
     #members-container.grid-view {
@@ -102,31 +51,11 @@ body {
         gap: 25px;
         max-width: 1100px;
         margin: 30px auto;
-        padding: 0 1rem;
-        box-sizing: border-box;
     }
 
     footer {
         background-color: #166534;
-        color: #ffffff !important;
+        color: white;
         padding: 3rem 0;
-        margin-top: 50px;
-        width: 100%;
-    }
-
-    .footer-container {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 2rem;
-        box-sizing: border-box;
-    }
-
-    .footer-info {
-        text-align: right;
-        border-left: 2px solid rgba(255, 255, 255, 0.2);
-        padding-left: 3rem;
     }
 }

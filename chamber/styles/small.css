@@ -1,17 +1,3 @@
-/* General Body Styles */
-body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Montserrat', sans-serif;
-}
-
 /* Header & Nav */
 header {
     text-align: center;
@@ -20,21 +6,13 @@ header {
     /* rgb(22, 101, 52) */
 }
 
-.logo {
-    width: 100px;
-    height: auto;
-    background-color: white;
-    padding: 5px;
-    border-radius: 4px;
-}
-
 /* FIX: Changed h1 to white to pass 7.13:1 ratio against dark green */
 h1 {
     color: #ffffff !important;
     margin: 0.5rem 0;
 }
 
-/* FIX: Menu toggle was 1.00:1 (invisible). Added white background for contrast. */
+/* FIX: Changed toggle to white background so text is visible (not 1.00:1) */
 #menu-toggle {
     font-size: 2rem;
     background-color: #ffffff !important;
@@ -58,7 +36,7 @@ h1 {
     display: block;
 }
 
-/* FIX: Ensure mobile nav links are white against dark green */
+/* FIX: Forced nav links to white for contrast */
 #nav-list li a {
     display: block;
     color: #ffffff !important;
@@ -67,17 +45,22 @@ h1 {
     border-top: 1px solid #14532d;
 }
 
-/* FIX: Active link background adjusted to pass contrast */
+/* FIX: Darkened active background for white text contrast */
 #nav-list li a.active {
     background-color: #064e3b !important;
     color: #ffffff !important;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
 }
 
 /* View Toggle Icons Styling */
 .view-toggle {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     margin: 20px 0;
 }
 
@@ -96,8 +79,8 @@ h1 {
 }
 
 .view-toggle button.active {
-    background-color: #166534;
-    color: white;
+    background-color: #d1fae5;
+    border-width: 2px;
 }
 
 /* Grid View Styles */
@@ -143,7 +126,7 @@ h1 {
 
 footer {
     background-color: #166534;
-    color: #ffffff !important;
+    color: white;
     padding: 2rem;
     text-align: center;
     margin-top: 2rem;
