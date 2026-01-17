@@ -8,125 +8,90 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Desktop view (700px and up) */
 @media (min-width: 700px) {
     #menu-toggle {
         display: none;
     }
 
-    /* Full-width dark green bar */
     header {
-        background-color: #166534;
+        background-color: #166534 !important;
         width: 100%;
-        margin: 0;
-        padding: 0;
     }
 
-    /* Navigation Container */
     .nav-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0.5rem 4rem 0.5rem 2rem;
+        padding: 0.5rem 2rem;
         box-sizing: border-box;
     }
 
-    /* Brand styling */
     .brand {
         display: flex;
         align-items: center;
         gap: 15px;
-        flex-shrink: 0;
     }
 
     .brand img {
         height: 60px;
-        width: auto;
         background-color: white;
         padding: 2px;
         border-radius: 4px;
     }
 
-    /* ACCESSIBILITY FIX: Changed color to white to pass 7.13:1 ratio */
+    /* ACCESSIBILITY FIX: Force white color for brand title */
     .brand h1 {
-        color: #ffffff;
+        color: #ffffff !important;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.5rem;
         margin: 0;
-        white-space: nowrap;
     }
 
-    /* Menu with spacing */
     #nav-list {
         display: flex;
-        flex-direction: row;
+        gap: 30px;
         list-style: none;
-        padding: 0;
-        margin: 0;
-        gap: 40px;
     }
 
     #nav-list li a {
-        padding: 0.8rem 1rem;
-        display: block;
-        color: white;
+        color: white !important;
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 500;
-        transition: background-color 0.3s;
+        padding: 0.5rem 1rem;
     }
 
     #nav-list li a:hover {
         background-color: #14532d;
-        color: #ffffff;
     }
 
-    /* ACCESSIBILITY FIX: Deep green for white text contrast */
+    /* ACCESSIBILITY FIX: Contrast for active link */
     #nav-list li a.active {
-        background-color: #064e3b;
-        color: #ffffff;
+        background-color: #064e3b !important;
         border-radius: 4px;
     }
 
-    /* Directory Title Centering */
     .directory-header {
         width: 100%;
         text-align: center;
         margin: 3rem 0;
     }
 
-    .directory-header h2 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .view-toggle {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    /* 3-column Grid View */
     #members-container.grid-view {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
         max-width: 1100px;
         margin: 30px auto;
-        padding: 0 1rem;
-        box-sizing: border-box;
     }
 
-    /* --- THE FOOTER --- */
     footer {
         background-color: #166534;
-        color: white;
+        color: white !important;
         padding: 3rem 0;
         margin-top: 50px;
-        width: 100%;
     }
 
     .footer-container {
@@ -134,33 +99,6 @@ body {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        align-items: center;
         padding: 0 2rem;
-        box-sizing: border-box;
-    }
-
-    .footer-contact {
-        text-align: left;
-    }
-
-    .footer-contact p {
-        margin: 5px 0;
-        font-size: 1.15rem;
-        line-height: 1.4;
-    }
-
-    .footer-contact p strong {
-        font-size: 1.3rem;
-    }
-
-    .footer-info {
-        text-align: right;
-        border-left: 2px solid rgba(255, 255, 255, 0.2);
-        padding-left: 3rem;
-    }
-
-    .footer-info p {
-        margin: 5px 0;
-        font-size: 1.1rem;
     }
 }
