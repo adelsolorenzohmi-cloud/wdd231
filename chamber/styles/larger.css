@@ -6,7 +6,6 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
-    /* Applied font for audit */
 }
 
 /* Desktop view (700px and up) */
@@ -50,10 +49,10 @@ body {
         border-radius: 4px;
     }
 
+    /* ACCESSIBILITY FIX: Changed h1 color to white for contrast */
     .brand h1 {
-        color: white;
+        color: #ffffff;
         font-family: 'Montserrat', sans-serif;
-        /* Applied font for audit */
         font-size: 1.5rem;
         margin: 0;
         white-space: nowrap;
@@ -84,7 +83,7 @@ body {
         color: #ffffff;
     }
 
-    /* ACCESSIBILITY FIX: Darker background for active link to pass contrast */
+    /* ACCESSIBILITY FIX: Darker green for white text contrast */
     #nav-list li a.active {
         background-color: #064e3b;
         color: #ffffff;
