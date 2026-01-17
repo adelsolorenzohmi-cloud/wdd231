@@ -16,37 +16,28 @@ h3 {
 header {
     text-align: center;
     padding: 1rem;
-    background-color: #166534 !important;
-    /* Force dark green */
+    background-color: #166534;
+    /* rgb(22, 101, 52) */
+    color: #ffffff;
+    /* Fixes the 2.95:1 contrast violation */
 }
 
-/* ACCESSIBILITY FIX: Force ALL text in header to be white to pass audit */
-header h1,
-header p,
-header span {
+/* Force title to be white */
+h1 {
     color: #ffffff !important;
+    margin: 0.5rem 0;
 }
 
-.logo {
-    width: 100px;
-    height: auto;
-    background-color: white;
-    padding: 5px;
-    border-radius: 4px;
-    margin: 0 auto;
-}
-
-/* ACCESSIBILITY FIX: Toggle button needs contrast against green */
+/* ACCESSIBILITY FIX: Menu toggle was 1.00:1 (invisible). 
+   We give it a white background so it stands out. */
 #menu-toggle {
-    font-size: 1.5rem;
-    background-color: #ffffff !important;
+    font-size: 2rem;
+    background-color: #ffffff;
     border: none;
-    color: #166534 !important;
+    color: #166534;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 5px 15px;
     border-radius: 4px;
-    margin: 10px 0;
-    font-weight: bold;
 }
 
 #nav-list {
@@ -61,16 +52,18 @@ header span {
     display: block;
 }
 
+/* ACCESSIBILITY FIX: Ensure links in the mobile menu are white */
 #nav-list li a {
     display: block;
-    color: white !important;
+    color: #ffffff !important;
     padding: 1rem;
     text-decoration: none;
     border-top: 1px solid #14532d;
 }
 
 #nav-list li a.active {
-    background-color: #064e3b !important;
+    background-color: #064e3b;
+    /* Darker green for white text contrast */
 }
 
 /* View Toggle Icons */
@@ -87,7 +80,6 @@ header span {
     background-color: #fff;
     border: 1px solid #166534;
     border-radius: 4px;
-    cursor: pointer;
     color: #166534;
 }
 
@@ -96,7 +88,7 @@ header span {
     color: white;
 }
 
-/* Grid/List Views */
+/* Grid/List Styles */
 .grid-view {
     display: grid;
     grid-template-columns: 1fr;
@@ -108,25 +100,12 @@ header span {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1.5rem;
-    text-align: center;
     background-color: white;
-}
-
-.grid-view section img {
-    max-width: 150px;
-    height: auto;
-    margin: 0 auto 1rem;
-}
-
-.list-view section {
-    padding: 1rem;
-    border-bottom: 1px solid #eee;
 }
 
 footer {
     background-color: #166534;
-    color: white !important;
+    color: white;
     padding: 2rem;
     text-align: center;
-    margin-top: 2rem;
 }

@@ -14,7 +14,7 @@ body {
     }
 
     header {
-        background-color: #166534 !important;
+        background-color: #166534;
         width: 100%;
     }
 
@@ -41,7 +41,7 @@ body {
         border-radius: 4px;
     }
 
-    /* ACCESSIBILITY FIX: Force white color for brand title */
+    /* ACCESSIBILITY FIX: Changed h1 to white to pass the 7.13:1 ratio */
     .brand h1 {
         color: #ffffff !important;
         font-family: 'Montserrat', sans-serif;
@@ -56,20 +56,15 @@ body {
     }
 
     #nav-list li a {
-        color: white !important;
+        color: #ffffff !important;
         text-decoration: none;
         font-size: 1.1rem;
         font-weight: 500;
         padding: 0.5rem 1rem;
     }
 
-    #nav-list li a:hover {
-        background-color: #14532d;
-    }
-
-    /* ACCESSIBILITY FIX: Contrast for active link */
     #nav-list li a.active {
-        background-color: #064e3b !important;
+        background-color: #064e3b;
         border-radius: 4px;
     }
 
@@ -89,9 +84,8 @@ body {
 
     footer {
         background-color: #166534;
-        color: white !important;
+        color: white;
         padding: 3rem 0;
-        margin-top: 50px;
     }
 
     .footer-container {
