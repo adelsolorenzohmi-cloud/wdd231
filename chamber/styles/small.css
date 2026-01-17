@@ -20,13 +20,13 @@ header {
     /* rgb(22, 101, 52) */
 }
 
-/* FIX: Forces white text in header for 7.13:1 ratio */
+/* CONTRAST FIX: Forces white text in header for 7.13:1 ratio */
 header h1,
 header p {
     color: #ffffff !important;
 }
 
-/* FIX: Menu toggle needs a background so it isn't "invisible" (1.00:1) */
+/* CONTRAST FIX: Added white background so toggle is visible (not 1.00:1) */
 #menu-toggle {
     font-size: 2rem;
     background-color: #ffffff !important;
@@ -50,7 +50,7 @@ header p {
     display: block;
 }
 
-/* FIX: Nav links must be white on green background */
+/* CONTRAST FIX: Nav links must be white on green background */
 #nav-list li a {
     display: block;
     color: #ffffff !important;
@@ -59,14 +59,12 @@ header p {
     border-top: 1px solid #14532d;
 }
 
-/* FIX: High contrast for active link */
 #nav-list li a.active {
     background-color: #064e3b !important;
     color: #ffffff !important;
 }
 
-/* CENTERING FIX: Business Directory Heading */
-.directory-header,
+/* LAYOUT: Centering the Directory Title */
 h2 {
     text-align: center;
     margin: 20px 0;
