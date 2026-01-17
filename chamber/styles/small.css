@@ -17,20 +17,21 @@ header {
     text-align: center;
     padding: 1rem;
     background-color: #166534;
-    /* rgb(22 101 52) */
+    /* rgb(22, 101, 52) */
 }
 
-/* FIX: Forces white text in header to solve the 2.95:1 ratio error */
-h1 {
+/* CONTRAST FIX: Forces white text to pass the 7.13:1 ratio */
+header h1,
+header p {
     color: #ffffff !important;
     margin: 0.5rem 0;
 }
 
-/* FIX: Prevents "Review (colors are equal)" by adding a white background */
+/* CONTRAST FIX: Fixes 1.00:1 ratio by using white background */
 #menu-toggle {
     font-size: 2rem;
     background-color: #ffffff !important;
-    border: none;
+    border: 2px solid #ffffff;
     color: #166534 !important;
     cursor: pointer;
     padding: 5px 15px;
@@ -50,7 +51,7 @@ h1 {
     display: block;
 }
 
-/* FIX: Ensures list items are white on the dark green background */
+/* CONTRAST FIX: Ensures nav links are white on dark green */
 #nav-list li a {
     display: block;
     color: #ffffff !important;
@@ -59,7 +60,7 @@ h1 {
     border-top: 1px solid #14532d;
 }
 
-/* FIX: Darkened active state for better white text contrast */
+/* CONTRAST FIX: Uses the passing deep green (rgb 6 78 59) for active state */
 #nav-list li a.active {
     background-color: #064e3b !important;
     color: #ffffff !important;
@@ -70,34 +71,29 @@ h1 {
     height: auto;
 }
 
-/* View Toggle Icons Styling */
+/* View Toggle Icons */
 .view-toggle {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     margin: 20px 0;
 }
 
 .view-toggle button {
     width: 44px;
     height: 44px;
-    font-size: 1.5rem;
     background-color: #fff;
     border: 1px solid #166534;
     border-radius: 4px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #166534;
 }
 
 .view-toggle button.active {
-    background-color: #d1fae5;
-    border-width: 2px;
+    background-color: #166534;
+    color: white;
 }
 
-/* Grid/List Layouts */
+/* Grid/List Styles */
 .grid-view {
     display: grid;
     grid-template-columns: 1fr;
@@ -109,25 +105,12 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1.5rem;
-    text-align: center;
     background-color: white;
-}
-
-.grid-view section img {
-    max-width: 150px;
-    height: auto;
-    margin: 0 auto 1rem;
-}
-
-.list-view section {
-    padding: 1rem;
-    border-bottom: 1px solid #eee;
 }
 
 footer {
     background-color: #166534;
-    color: white;
+    color: #ffffff !important;
     padding: 2rem;
     text-align: center;
-    margin-top: 2rem;
 }

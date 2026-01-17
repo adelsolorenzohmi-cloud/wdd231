@@ -1,3 +1,4 @@
+/* Desktop view (700px and up) */
 @media (min-width: 700px) {
     #menu-toggle {
         display: none;
@@ -5,6 +6,7 @@
 
     header {
         background-color: #166534;
+        width: 100%;
     }
 
     .nav-container {
@@ -14,6 +16,7 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 0.5rem 2rem;
+        box-sizing: border-box;
     }
 
     .brand {
@@ -22,7 +25,7 @@
         gap: 15px;
     }
 
-    /* FIX: Force white color for brand title to pass contrast audit */
+    /* CONTRAST FIX: Forces white text for brand title */
     .brand h1 {
         color: #ffffff !important;
         font-family: 'Montserrat', sans-serif;
@@ -32,20 +35,17 @@
 
     #nav-list {
         display: flex;
-        flex-direction: row;
+        gap: 30px;
         list-style: none;
-        padding: 0;
-        margin: 0;
-        gap: 40px;
     }
 
     #nav-list li a {
         color: #ffffff !important;
         text-decoration: none;
-        padding: 0.8rem 1rem;
+        padding: 0.5rem 1rem;
     }
 
-    /* FIX: Prevents the 2.16:1 contrast error on the active link */
+    /* CONTRAST FIX: Uses deep green background to pass with white text */
     #nav-list li a.active {
         background-color: #064e3b !important;
         color: #ffffff !important;
@@ -62,7 +62,7 @@
 
     footer {
         background-color: #166534;
-        color: white;
+        color: #ffffff !important;
         padding: 3rem 0;
     }
 }
