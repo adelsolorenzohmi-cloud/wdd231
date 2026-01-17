@@ -1,4 +1,4 @@
-/* --- Core Styles --- */
+/* Core Styles */
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -11,27 +11,25 @@ h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* --- Header & Nav --- */
+/* Header & Nav */
 header {
     text-align: center;
     padding: 1rem;
     background-color: #166534;
-    /* Dark Green */
 }
 
-/* CONTRAST FIX: Forces white text in header for 7.13:1 ratio */
+/* FIX: Forces white text in header for 7.13:1 ratio */
 header h1,
 header p {
     color: #ffffff !important;
 }
 
-/* LOGO FIX: Restored original size */
 .logo {
     width: 100px;
     height: auto;
 }
 
-/* CONTRAST FIX: Added white background so toggle is visible */
+/* FIX: Added white background so toggle is visible (not 1.00:1) */
 #menu-toggle {
     font-size: 2rem;
     background-color: #ffffff !important;
@@ -54,7 +52,7 @@ header p {
     display: block;
 }
 
-/* CONTRAST FIX: Nav links white on green */
+/* FIX: Nav links white on green */
 #nav-list li a {
     display: block;
     color: #ffffff !important;
@@ -62,14 +60,7 @@ header p {
     text-decoration: none;
 }
 
-/* CONTRAST FIX: Dark green active state */
-#nav-list li a.active {
-    background-color: #064e3b !important;
-    color: #ffffff !important;
-}
-
-/* --- Directory Layout --- */
-/* CENTERING FIX: Business Directory title */
+/* Directory Layout - Centered Heading */
 h2 {
     text-align: center;
     margin: 20px 0;
@@ -80,14 +71,6 @@ h2 {
     justify-content: center;
     gap: 15px;
     margin: 20px 0;
-}
-
-.view-toggle button {
-    width: 44px;
-    height: 44px;
-    background-color: #fff;
-    border: 1px solid #166534;
-    border-radius: 4px;
 }
 
 .grid-view {
@@ -104,6 +87,7 @@ h2 {
     text-align: center;
 }
 
+/* Footer - Simple Mobile View */
 footer {
     background-color: #166534;
     color: #ffffff !important;

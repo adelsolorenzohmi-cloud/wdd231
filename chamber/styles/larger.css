@@ -3,10 +3,8 @@
         display: none;
     }
 
-    /* SCROLLBAR FIX: Ensure header doesn't exceed 100vw */
     header {
         background-color: #166534;
-        width: 100%;
     }
 
     .nav-container {
@@ -24,7 +22,7 @@
         gap: 15px;
     }
 
-    /* CONTRAST FIX: White brand title */
+    /* FIX: White brand title */
     .brand h1 {
         color: #ffffff !important;
         font-size: 1.5rem;
@@ -42,7 +40,7 @@
         text-decoration: none;
     }
 
-    /* CONTRAST FIX: High contrast active state */
+    /* FIX: Active link background changed to pass contrast */
     #nav-list li a.active {
         background-color: #064e3b !important;
         color: #ffffff !important;
@@ -50,7 +48,7 @@
         border-radius: 4px;
     }
 
-    /* LAYOUT FIX: Centered heading */
+    /* Heading Centered */
     h2 {
         text-align: center;
         margin: 3rem 0;
@@ -65,9 +63,25 @@
         margin: 30px auto;
     }
 
+    /* FOOTER RESTORED: 2-Column Layout */
     footer {
         background-color: #166534;
         color: #ffffff !important;
         padding: 3rem 0;
+    }
+
+    .footer-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .footer-info {
+        text-align: right;
+        border-left: 2px solid rgba(255, 255, 255, 0.2);
+        padding-left: 3rem;
     }
 }
