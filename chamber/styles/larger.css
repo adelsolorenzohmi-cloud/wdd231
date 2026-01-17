@@ -7,8 +7,23 @@
         background-color: #166534;
     }
 
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0.5rem 2rem;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* FIX: Force white color for brand title to pass contrast audit */
     .brand h1 {
-        /* FIX: Ensure title is white on desktop */
         color: #ffffff !important;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.5rem;
@@ -18,8 +33,10 @@
     #nav-list {
         display: flex;
         flex-direction: row;
-        gap: 40px;
         list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 40px;
     }
 
     #nav-list li a {
@@ -28,21 +45,11 @@
         padding: 0.8rem 1rem;
     }
 
-    /* FIX: Adjusted active link background to pass contrast */
+    /* FIX: Prevents the 2.16:1 contrast error on the active link */
     #nav-list li a.active {
         background-color: #064e3b !important;
         color: #ffffff !important;
         border-radius: 4px;
-    }
-
-    /* Restoration of your original layout properties below */
-    .nav-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0.5rem 2rem;
     }
 
     #members-container.grid-view {

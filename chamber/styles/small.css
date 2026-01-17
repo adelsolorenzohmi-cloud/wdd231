@@ -1,18 +1,32 @@
+/* General Body Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Header & Nav */
 header {
     text-align: center;
     padding: 1rem;
     background-color: #166534;
-    /* rgb(22, 101, 52) */
+    /* rgb(22 101 52) */
 }
 
-/* FIX: Changed h1 to white to pass 7.13:1 ratio against dark green */
+/* FIX: Forces white text in header to solve the 2.95:1 ratio error */
 h1 {
     color: #ffffff !important;
     margin: 0.5rem 0;
 }
 
-/* FIX: Changed toggle to white background so text is visible (not 1.00:1) */
+/* FIX: Prevents "Review (colors are equal)" by adding a white background */
 #menu-toggle {
     font-size: 2rem;
     background-color: #ffffff !important;
@@ -36,7 +50,7 @@ h1 {
     display: block;
 }
 
-/* FIX: Forced nav links to white for contrast */
+/* FIX: Ensures list items are white on the dark green background */
 #nav-list li a {
     display: block;
     color: #ffffff !important;
@@ -45,7 +59,7 @@ h1 {
     border-top: 1px solid #14532d;
 }
 
-/* FIX: Darkened active background for white text contrast */
+/* FIX: Darkened active state for better white text contrast */
 #nav-list li a.active {
     background-color: #064e3b !important;
     color: #ffffff !important;
@@ -83,7 +97,7 @@ h1 {
     border-width: 2px;
 }
 
-/* Grid View Styles */
+/* Grid/List Layouts */
 .grid-view {
     display: grid;
     grid-template-columns: 1fr;
@@ -105,23 +119,9 @@ h1 {
     margin: 0 auto 1rem;
 }
 
-/* List View Styles */
-.list-view {
-    display: flex;
-    flex-direction: column;
-}
-
 .list-view section {
     padding: 1rem;
     border-bottom: 1px solid #eee;
-}
-
-.list-view section img {
-    display: none;
-}
-
-.list-view section:nth-child(even) {
-    background-color: #f9f9f9;
 }
 
 footer {
