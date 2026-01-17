@@ -17,25 +17,25 @@ header {
     text-align: center;
     padding: 1rem;
     background-color: #166534;
-    /* Match dark green */
+    /* Dark Green Background */
 }
 
 .logo {
     width: 100px;
     height: auto;
     background-color: white;
-    /* Contrast for the logo */
     padding: 5px;
     border-radius: 4px;
 }
 
+/* ACCESSIBILITY FIX: Changed h1 from green to white */
 h1 {
     color: #ffffff;
-    /* White text on dark green passes 7.13:1 */
+    /* Contrast Ratio 7.13:1 - PASS */
     margin: 0.5rem 0;
 }
 
-/* ACCESSIBILITY FIX: Toggle button now has a background so it's visible */
+/* ACCESSIBILITY FIX: Toggle button needs contrast against the green header */
 #menu-toggle {
     font-size: 2rem;
     background-color: #ffffff;
@@ -67,9 +67,9 @@ h1 {
     border-top: 1px solid #14532d;
 }
 
-/* ACCESSIBILITY FIX: Deep green for high contrast active state */
 #nav-list li a.active {
     background-color: #064e3b;
+    /* High Contrast Active State */
 }
 
 /* View Toggle Icons Styling */
@@ -97,7 +97,6 @@ h1 {
 .view-toggle button.active {
     background-color: #166534;
     color: white;
-    border-width: 2px;
 }
 
 /* Grid View Styles */
@@ -114,7 +113,6 @@ h1 {
     padding: 1.5rem;
     text-align: center;
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .grid-view section img {

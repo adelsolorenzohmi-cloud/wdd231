@@ -49,7 +49,7 @@ body {
         border-radius: 4px;
     }
 
-    /* ACCESSIBILITY FIX: Changed h1 color to white for contrast */
+    /* ACCESSIBILITY FIX: Changed color to white to pass 7.13:1 ratio */
     .brand h1 {
         color: #ffffff;
         font-family: 'Montserrat', sans-serif;
@@ -83,7 +83,7 @@ body {
         color: #ffffff;
     }
 
-    /* ACCESSIBILITY FIX: Darker green for white text contrast */
+    /* ACCESSIBILITY FIX: Deep green for white text contrast */
     #nav-list li a.active {
         background-color: #064e3b;
         color: #ffffff;
