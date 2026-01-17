@@ -3,8 +3,11 @@
         display: none;
     }
 
+    /* FIX: Width 100% and margin 0 to kill horizontal scrollbar */
     header {
         background-color: #166534;
+        width: 100%;
+        margin: 0;
     }
 
     .nav-container {
@@ -13,7 +16,7 @@
         justify-content: space-between;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0.5rem 2rem;
+        padding: 0 2rem;
     }
 
     .brand {
@@ -22,30 +25,31 @@
         gap: 15px;
     }
 
-    /* FIX: White brand title */
+    /* FIX: White color for brand title contrast pass */
     .brand h1 {
         color: #ffffff !important;
         font-size: 1.5rem;
-        margin: 0;
     }
 
     #nav-list {
         display: flex;
-        gap: 30px;
         list-style: none;
+        margin: 0;
+        padding: 0;
     }
 
     #nav-list li a {
         color: #ffffff !important;
         text-decoration: none;
+        padding: 1.5rem 1rem;
+        /* Matched to header height */
+        display: block;
     }
 
-    /* FIX: Active link background changed to pass contrast */
+    /* FIX: High contrast active state without breaking alignment */
     #nav-list li a.active {
         background-color: #064e3b !important;
         color: #ffffff !important;
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
     }
 
     /* Heading Centered */
@@ -55,6 +59,7 @@
         font-size: 2.5rem;
     }
 
+    /* Grid layout - 3 columns */
     #members-container.grid-view {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -63,11 +68,12 @@
         margin: 30px auto;
     }
 
-    /* FOOTER RESTORED: 2-Column Layout */
+    /* --- RESTORED 2-COLUMN FOOTER --- */
     footer {
         background-color: #166534;
         color: #ffffff !important;
         padding: 3rem 0;
+        width: 100%;
     }
 
     .footer-container {
