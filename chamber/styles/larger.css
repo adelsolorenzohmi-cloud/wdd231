@@ -8,6 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Desktop view (700px and up) */
 @media (min-width: 700px) {
     #menu-toggle {
         display: none;
@@ -16,6 +17,8 @@ body {
     header {
         background-color: #166534;
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .nav-container {
@@ -24,7 +27,7 @@ body {
         justify-content: space-between;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 4rem 0.5rem 2rem;
         box-sizing: border-box;
     }
 
@@ -32,39 +35,53 @@ body {
         display: flex;
         align-items: center;
         gap: 15px;
+        flex-shrink: 0;
     }
 
     .brand img {
         height: 60px;
+        width: auto;
         background-color: white;
         padding: 2px;
         border-radius: 4px;
     }
 
-    /* ACCESSIBILITY FIX: Changed h1 to white to pass the 7.13:1 ratio */
+    /* FIX: Force brand title to white to pass 7.13:1 ratio */
     .brand h1 {
         color: #ffffff !important;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.5rem;
         margin: 0;
+        white-space: nowrap;
     }
 
     #nav-list {
         display: flex;
-        gap: 30px;
+        flex-direction: row;
         list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 40px;
     }
 
     #nav-list li a {
+        padding: 0.8rem 1rem;
+        display: block;
         color: #ffffff !important;
         text-decoration: none;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         font-weight: 500;
-        padding: 0.5rem 1rem;
+        transition: background-color 0.3s;
     }
 
+    #nav-list li a:hover {
+        background-color: #14532d;
+    }
+
+    /* FIX: Background changed to a darker green to pass contrast with white text */
     #nav-list li a.active {
-        background-color: #064e3b;
+        background-color: #064e3b !important;
+        color: #ffffff !important;
         border-radius: 4px;
     }
 
@@ -74,18 +91,27 @@ body {
         margin: 3rem 0;
     }
 
+    .directory-header h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
     #members-container.grid-view {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
         max-width: 1100px;
         margin: 30px auto;
+        padding: 0 1rem;
+        box-sizing: border-box;
     }
 
     footer {
         background-color: #166534;
-        color: white;
+        color: #ffffff !important;
         padding: 3rem 0;
+        margin-top: 50px;
+        width: 100%;
     }
 
     .footer-container {
@@ -93,6 +119,14 @@ body {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 0 2rem;
+        box-sizing: border-box;
+    }
+
+    .footer-info {
+        text-align: right;
+        border-left: 2px solid rgba(255, 255, 255, 0.2);
+        padding-left: 3rem;
     }
 }

@@ -18,26 +18,32 @@ header {
     padding: 1rem;
     background-color: #166534;
     /* rgb(22, 101, 52) */
-    color: #ffffff;
-    /* Fixes the 2.95:1 contrast violation */
 }
 
-/* Force title to be white */
+.logo {
+    width: 100px;
+    height: auto;
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* FIX: Changed h1 to white to pass 7.13:1 ratio against dark green */
 h1 {
     color: #ffffff !important;
     margin: 0.5rem 0;
 }
 
-/* ACCESSIBILITY FIX: Menu toggle was 1.00:1 (invisible). 
-   We give it a white background so it stands out. */
+/* FIX: Menu toggle was 1.00:1 (invisible). Added white background for contrast. */
 #menu-toggle {
     font-size: 2rem;
-    background-color: #ffffff;
+    background-color: #ffffff !important;
     border: none;
-    color: #166534;
+    color: #166534 !important;
     cursor: pointer;
     padding: 5px 15px;
     border-radius: 4px;
+    margin: 10px 0;
 }
 
 #nav-list {
@@ -52,7 +58,7 @@ h1 {
     display: block;
 }
 
-/* ACCESSIBILITY FIX: Ensure links in the mobile menu are white */
+/* FIX: Ensure mobile nav links are white against dark green */
 #nav-list li a {
     display: block;
     color: #ffffff !important;
@@ -61,12 +67,13 @@ h1 {
     border-top: 1px solid #14532d;
 }
 
+/* FIX: Active link background adjusted to pass contrast */
 #nav-list li a.active {
-    background-color: #064e3b;
-    /* Darker green for white text contrast */
+    background-color: #064e3b !important;
+    color: #ffffff !important;
 }
 
-/* View Toggle Icons */
+/* View Toggle Icons Styling */
 .view-toggle {
     display: flex;
     justify-content: center;
@@ -77,9 +84,14 @@ h1 {
 .view-toggle button {
     width: 44px;
     height: 44px;
+    font-size: 1.5rem;
     background-color: #fff;
     border: 1px solid #166534;
     border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #166534;
 }
 
@@ -88,7 +100,7 @@ h1 {
     color: white;
 }
 
-/* Grid/List Styles */
+/* Grid View Styles */
 .grid-view {
     display: grid;
     grid-template-columns: 1fr;
@@ -100,12 +112,39 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1.5rem;
+    text-align: center;
     background-color: white;
+}
+
+.grid-view section img {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto 1rem;
+}
+
+/* List View Styles */
+.list-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-view section {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.list-view section img {
+    display: none;
+}
+
+.list-view section:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
 footer {
     background-color: #166534;
-    color: white;
+    color: #ffffff !important;
     padding: 2rem;
     text-align: center;
+    margin-top: 2rem;
 }
