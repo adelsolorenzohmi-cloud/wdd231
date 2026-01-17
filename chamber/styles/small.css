@@ -1,9 +1,8 @@
-/* General Body Styles */
+/* --- Core Styles --- */
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
 h1,
@@ -12,12 +11,12 @@ h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Header & Nav */
+/* --- Header & Nav --- */
 header {
     text-align: center;
     padding: 1rem;
     background-color: #166534;
-    /* rgb(22, 101, 52) */
+    /* Dark Green */
 }
 
 /* CONTRAST FIX: Forces white text in header for 7.13:1 ratio */
@@ -26,7 +25,13 @@ header p {
     color: #ffffff !important;
 }
 
-/* CONTRAST FIX: Added white background so toggle is visible (not 1.00:1) */
+/* LOGO FIX: Restored original size */
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* CONTRAST FIX: Added white background so toggle is visible */
 #menu-toggle {
     font-size: 2rem;
     background-color: #ffffff !important;
@@ -43,34 +48,33 @@ header p {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #166534;
 }
 
 #nav-list.show {
     display: block;
 }
 
-/* CONTRAST FIX: Nav links must be white on green background */
+/* CONTRAST FIX: Nav links white on green */
 #nav-list li a {
     display: block;
     color: #ffffff !important;
     padding: 1rem;
     text-decoration: none;
-    border-top: 1px solid #14532d;
 }
 
+/* CONTRAST FIX: Dark green active state */
 #nav-list li a.active {
     background-color: #064e3b !important;
     color: #ffffff !important;
 }
 
-/* LAYOUT: Centering the Directory Title */
+/* --- Directory Layout --- */
+/* CENTERING FIX: Business Directory title */
 h2 {
     text-align: center;
     margin: 20px 0;
 }
 
-/* View Toggle Icons */
 .view-toggle {
     display: flex;
     justify-content: center;
@@ -84,15 +88,8 @@ h2 {
     background-color: #fff;
     border: 1px solid #166534;
     border-radius: 4px;
-    color: #166534;
 }
 
-.view-toggle button.active {
-    background-color: #166534;
-    color: white;
-}
-
-/* Grid/List Views */
 .grid-view {
     display: grid;
     grid-template-columns: 1fr;
@@ -103,9 +100,8 @@ h2 {
 .grid-view section {
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
-    background-color: white;
 }
 
 footer {
