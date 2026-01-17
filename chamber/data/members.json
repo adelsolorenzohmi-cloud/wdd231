@@ -1,65 +1,65 @@
 [
     {
-        "name": "ID WEB",
-        "address": "2115 S Vista Avenue, Boise, ID 83705",
-        "phone": "(208) 342-9386",
-        "website": "https://idahowebsites.com/",
-        "image": "idweb.png",
+        "name": "Cooperativa Nahualá R.L.",
+        "address": "Caserío Pasac, Nahualá, Sololá",
+        "phone": "+502 4890-1234",
+        "website": "https://cooperativanahuala.com.gt",
+        "image": "nahuala_coop.png",
         "membership": 3,
-        "tagline": "Innovative Design for the Web"
+        "tagline": "Café Orgánico de Altura"
     },
     {
-        "name": "Surge Web Design",
-        "address": "4072 E Arch Drive, Meridian, ID 83646",
-        "phone": "(208) 631-0640",
-        "website": "https://surgewebdesign.com/",
-        "image": "surge.png",
-        "membership": 2,
-        "tagline": "Ride the Wave of Success"
-    },
-    {
-        "name": "Nahualá Textiles",
-        "address": "Calle Principal, Nahualá, Sololá",
-        "phone": "(502) 7761-1234",
-        "website": "https://nahualatextiles.com",
-        "image": "textiles.png",
-        "membership": 1,
-        "tagline": "Traditional Maya Weaving"
-    },
-    {
-        "name": "Sololá Coffee Co.",
-        "address": "12 Ave 4-50, Panajachel, Sololá",
-        "phone": "(502) 2333-4455",
-        "website": "https://sololacoffee.gt",
-        "image": "coffee.png",
+        "name": "Radio Nawal Estereo",
+        "address": "Barrio Centro, Nahualá, Sololá",
+        "phone": "+502 5544-6789",
+        "website": "https://nawalestereo.com",
+        "image": "nawal_radio.png",
         "membership": 3,
-        "tagline": "Best Highland Beans"
+        "tagline": "La Voz de la Cultura Kʼicheʼ"
     },
     {
-        "name": "Maya Tech Solutions",
-        "address": "Barrio Centro, Nahualá",
-        "phone": "(502) 5544-3322",
-        "website": "https://mayatech.com",
-        "image": "tech.png",
+        "name": "Asociación de Tejedores Nahualá",
+        "address": "Calle Principal, Sector 2, Nahualá",
+        "phone": "+502 3321-5566",
+        "website": "https://nahualatextiles.org.gt",
+        "image": "weaving_assoc.png",
         "membership": 2,
-        "tagline": "Connecting the Highlands"
+        "tagline": "Arte y Tradición en Cada Tejido"
     },
     {
-        "name": "Lake Atitlán Tours",
-        "address": "Santander Street, Panajachel",
-        "phone": "(502) 4411-9988",
-        "website": "https://atitlantours.com",
-        "image": "tours.png",
+        "name": "Cooperativa El Tesoro de Oro",
+        "address": "02 Avenida, Zona 1, Nahualá",
+        "phone": "+502 7760-4321",
+        "website": "https://eltesorodeoro.com.gt",
+        "image": "tesoro_oro.png",
+        "membership": 2,
+        "tagline": "Ahorro y Crédito para el Desarrollo"
+    },
+    {
+        "name": "Comedor Las Verapaces",
+        "address": "Km 157 Carretera Interamericana, Nahualá",
+        "phone": "+502 4012-9876",
+        "website": "https://comedorverapaces.gt",
+        "image": "comedor.png",
         "membership": 1,
-        "tagline": "Experience the Magic"
+        "tagline": "El Sabor Auténtico de la Montaña"
     },
     {
-        "name": "Green Valley Agriculture",
-        "address": "Km 158 Interamericana, Nahualá",
-        "phone": "(502) 9988-7766",
-        "website": "https://greenvalley.gt",
-        "image": "agri.png",
+        "name": "Transportes Nahualá",
+        "address": "Terminal de Buses, Nahualá, Sololá",
+        "phone": "+502 5877-1122",
+        "website": "https://transportesnahuala.gt",
+        "image": "bus.png",
+        "membership": 1,
+        "tagline": "Conectando al Altiplano"
+    },
+    {
+        "name": "Ferretería El Progreso",
+        "address": "Canton Patzite, Zona 0, Nahualá",
+        "phone": "+502 4566-0099",
+        "website": "https://ferreteriaprogreso.com.gt",
+        "image": "ferreteria.png",
         "membership": 2,
-        "tagline": "Organic Highland Produce"
+        "tagline": "Construyendo el Futuro de Sololá"
     }
 ]
