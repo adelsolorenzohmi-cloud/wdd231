@@ -75,8 +75,8 @@ header p {
 
 .hero-box {
     position: absolute;
-    top: 20%;
-    left: 30px;
+    bottom: 15%;
+    left: 60px;
 
     background: rgba(255, 255, 255, 0.7);
     padding: 10px;

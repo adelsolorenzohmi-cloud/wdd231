@@ -6,29 +6,41 @@
     header {
         background-color: #166534;
         width: 100%;
-        max-width: 100vw;
+        height: 80px;
+        position: relative;
     }
 
     /* Menu Alignment */
     .nav-container {
         display: flex;
-        align-items: stretch;
-        justify-content: space-between;
+        align-items: center;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 2rem;
+        height: 100%;
+        position: relative;
     }
 
     .brand {
+        position: absolute;
         display: flex;
         align-items: center;
         gap: 15px;
+        width: 400px;
+        flex-shrink: 0;
+    }
+
+    .brand img {
+        width: 80px;
+        height: auto;
     }
 
     .brand h1 {
         color: #ffffff;
         font-size: 1.5rem;
         margin: 0;
+        font-weight: 700;
+        letter-spacing: 0;
+        white-space: nowrap;
     }
 
     #nav-list {
@@ -36,6 +48,7 @@
         list-style: none;
         margin: 0;
         padding: 0;
+        margin-left: auto;
     }
 
     #nav-list li {
@@ -45,15 +58,23 @@
     #nav-list li a {
         display: flex;
         align-items: center;
+        justify-content: center;
         color: #ffffff;
         text-decoration: none;
-        padding: 0 1.5rem;
+        width: 120px;
+        /* Fixed width for all links */
         height: 100%;
+        font-weight: 500;
+        /* Consistent weight prevents font 'shiver' */
+        /* Removed horizontal padding in favor of width */
+        box-sizing: border-box;
     }
 
     #nav-list li a.active {
         background-color: #064e3b;
         color: #ffffff;
+        font-weight: 500;
+        /* Must match the weight above to stay steady */
     }
 
     /* Heading Centered */
