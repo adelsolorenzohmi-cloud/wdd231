@@ -112,7 +112,7 @@ header p {
     overflow: hidden;
 }
 
-.card h3 {
+.card>h2 {
     background-color: #444;
     color: white;
     margin: 0;
