@@ -1,4 +1,4 @@
-/* Core Styles */
+/* Core Styles*/
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -12,7 +12,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Header & Nav */
+/* Header & Nav*/
 header {
     text-align: center;
     padding: 1rem;
@@ -59,7 +59,112 @@ header p {
     text-decoration: none;
 }
 
-/* Business Directory - Centered Title */
+/* --- HOME PAGE SPECIFIC STYLES --- */
+
+/* Hero Section Mobile */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-box {
+    position: absolute;
+    top: 20%;
+    left: 30px;
+
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+
+    width: fit-content;
+    height: fit-content;
+    display: block;
+}
+
+.cta-button {
+    background-color: #166534;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+/* Home Grid & Cards */
+.home-grid {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card h3 {
+    background-color: #444;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+/* Weather Styling */
+.weather-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#weather-icon {
+    width: 50px;
+}
+
+/* Spotlights Mobile */
+.spotlights-wrapper {
+    padding: 1rem;
+}
+
+.spotlights {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* JS cards */
+.spotlight-card {
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.spotlight-card img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Directory Styles*/
 h2 {
     text-align: center;
     margin: 20px 0;
@@ -72,7 +177,6 @@ h2 {
     margin: 20px 0;
 }
 
-/* Grid View Mobile */
 .grid-view {
     display: grid;
     grid-template-columns: 1fr;
@@ -93,7 +197,6 @@ h2 {
     margin: 0 auto 10px;
 }
 
-/* List View Alignment */
 .list-view {
     display: flex;
     flex-direction: column;
