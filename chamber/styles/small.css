@@ -226,3 +226,145 @@ footer {
     padding: 2rem;
     text-align: center;
 }
+
+/* --- JOIN PAGE STYLES--- */
+
+/* Container and Layout */
+.join-grid-container {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 100%;
+}
+
+/* Form Elements */
+.join-grid-container h1 {
+    color: #166534;
+    margin-bottom: 1.5rem;
+}
+
+.join-grid-container label {
+    display: block;
+    margin: 1.2rem 0;
+    font-weight: 600;
+    color: #333;
+}
+
+.join-grid-container input[type="text"],
+.join-grid-container input[type="email"],
+.join-grid-container input[type="tel"],
+.join-grid-container select,
+.join-grid-container textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.join-grid-container .submit-btn {
+    background-color: #166534;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.join-grid-container .submit-btn:hover {
+    background-color: #115029;
+}
+
+/* Membership Level Cards */
+.level-card {
+    background-color: #eeeeee;
+    border: 1px solid #ddd;
+    border-radius: 35px 5px 35px 5px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.level-card h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+.open-modal {
+    background-color: white;
+    border: 1px solid #166534;
+    color: #166534;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.open-modal:hover {
+    background-color: #166534;
+    color: white;
+}
+
+/* Animation on Load */
+.anim-load {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUpFade 0.6s ease-out forwards;
+}
+
+@keyframes slideUpFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered timing for the 4 cards */
+#card-np {
+    animation-delay: 0.1s;
+}
+
+#card-bronze {
+    animation-delay: 0.2s;
+}
+
+#card-silver {
+    animation-delay: 0.3s;
+}
+
+#card-gold {
+    animation-delay: 0.4s;
+}
+
+/* Dialog/Modal Styling */
+.membership-modal {
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.membership-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.close-modal {
+    float: right;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #666;
+}

@@ -8,20 +8,15 @@
 
     <meta name="description"
         content="Join the Nahualá Chamber of Commerce to grow your business. Choose from NP, Bronze, Silver, or Gold membership levels and access exclusive community benefits.">
-
     <meta name="author" content="Adelso Tzep Chox">
-
     <link rel="icon" href="images/favicon.ico">
 
     <meta property="og:title" content="Join the Nahualá Chamber of Commerce Today">
     <meta property="og:type" content="website">
-
     <meta property="og:description"
         content="Empower your organization by joining Sololá's premier business network. Discover membership perks, from local directory listings to premium advertising.">
-
     <meta property="og:image"
         content="https://adelosolorenzohmi-cloud.github.io/wdd231/chamber/images/hero-nahuala.jpg">
-
     <meta property="og:url" content="https://adelosolorenzohmi-cloud.github.io/wdd231/chamber/join.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,47 +31,57 @@
 
 <body>
     <header>
+        <nav class="nav-container">
+            <div class="brand">
+                <img src="images/logo.jpg" alt="Nahualá Chamber Logo" class="logo">
+                <h1>Nahualá Chamber</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul id="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-    </nav>
 
     <main class="join-grid-container">
         <section class="form-section">
             <h1>Membership Application Form</h1>
             <form method="get" action="thankyou.html" id="membership-form">
 
-                <label>First Name
+                <label title="First Name">First Name
                     <input type="text" name="fname" required autocomplete="given-name"
                         title="Please enter your first name.">
                 </label>
 
-                <label>Last Name
+                <label title="Last Name">Last Name
                     <input type="text" name="lname" required autocomplete="family-name"
                         title="Please enter your last name.">
                 </label>
 
-                <label>Title
+                <label title="Organizational Title">Title
                     <input type="text" name="org-title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
                         title="Enter your professional title (Minimum 7 characters, alphabetical, hyphens, and spaces only).">
                 </label>
 
-                <label>Email
+                <label title="Email Address">Email
                     <input type="email" name="email" required autocomplete="email" placeholder="john89@gmail.com"
                         title="Please enter a valid email address.">
                 </label>
 
-                <label>Cell Phone
+                <label title="Mobile Phone Number">Cell Phone
                     <input type="tel" name="phone" required autocomplete="tel" placeholder="987-555-1234"
                         title="Please enter your mobile phone number.">
                 </label>
 
-                <label>Organization
+                <label title="Organization Name">Organization
                     <input type="text" name="organization" required autocomplete="organization"
                         title="Please enter the name of your business or organization.">
                 </label>
 
-                <label>Membership Level
+                <label title="Membership Level Selection">Membership Level
                     <select name="level" required title="Please select a membership level.">
                         <option value="" disabled selected>Select...</option>
                         <option value="np">NP Membership</option>
@@ -86,7 +91,7 @@
                     </select>
                 </label>
 
-                <label>Organization Description
+                <label title="Organization Description">Organization Description
                     <textarea name="description" title="Provide a brief description of your organization."></textarea>
                 </label>
 
@@ -168,6 +173,18 @@
     </dialog>
 
     <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><strong>Nahualá Chamber of Commerce</strong></p>
+                <p>Nahualá, Sololá, Guatemala</p>
+                <p>info@nahuala.org | (502) 3555-2300</p>
+            </div>
+
+            <div class="footer-info">
+                <p>&copy; <span id="currentYear"></span> | Adelso Tzep Chox | WDD 231</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
     </footer>
 
     <script src="scripts/join.js"></script>
