@@ -227,35 +227,38 @@ footer {
     text-align: center;
 }
 
-/* --- JOIN PAGE STYLES--- */
+/* --- JOIN PAGE STYLES */
 
-/* Container and Layout */
+/* Scoped container to prevent affecting other pages */
 .join-grid-container {
     padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
     max-width: 100%;
 }
 
-/* Form Elements */
 .join-grid-container h1 {
     color: #166534;
-    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.join-grid-container label {
+.join-grid-container h2 {
+    color: #333;
+    margin-top: 2rem;
+}
+
+/* Form Styling */
+#membership-form label {
     display: block;
     margin: 1.2rem 0;
     font-weight: 600;
-    color: #333;
+    color: #444;
 }
 
-.join-grid-container input[type="text"],
-.join-grid-container input[type="email"],
-.join-grid-container input[type="tel"],
-.join-grid-container select,
-.join-grid-container textarea {
+#membership-form input[type="text"],
+#membership-form input[type="email"],
+#membership-form input[type="tel"],
+#membership-form select,
+#membership-form textarea {
     display: block;
     width: 100%;
     padding: 12px;
@@ -266,7 +269,11 @@ footer {
     font-family: 'Open Sans', sans-serif;
 }
 
-.join-grid-container .submit-btn {
+#membership-form textarea {
+    height: 100px;
+}
+
+.submit-btn {
     background-color: #166534;
     color: white;
     padding: 15px;
@@ -276,14 +283,15 @@ footer {
     font-size: 1.1rem;
     font-weight: bold;
     width: 100%;
+    margin-top: 1rem;
     transition: background 0.3s ease;
 }
 
-.join-grid-container .submit-btn:hover {
+.submit-btn:hover {
     background-color: #115029;
 }
 
-/* Membership Level Cards */
+/* Membership Cards */
 .level-card {
     background-color: #eeeeee;
     border: 1px solid #ddd;
@@ -294,20 +302,15 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.level-card h3 {
-    margin-top: 0;
-    font-size: 1.25rem;
-}
-
 .open-modal {
     background-color: white;
-    border: 1px solid #166534;
+    border: 2px solid #166534;
     color: #166534;
     padding: 8px 20px;
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s;
+    margin-top: 10px;
 }
 
 .open-modal:hover {
@@ -315,21 +318,21 @@ footer {
     color: white;
 }
 
-/* Animation on Load */
+/* Animations */
 .anim-load {
     opacity: 0;
     transform: translateY(20px);
-    animation: slideUpFade 0.6s ease-out forwards;
+    animation: joinFadeIn 0.6s ease-out forwards;
 }
 
-@keyframes slideUpFade {
+@keyframes joinFadeIn {
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* Staggered timing for the 4 cards */
+/* Staggered Delay for Cards */
 #card-np {
     animation-delay: 0.1s;
 }
@@ -346,25 +349,24 @@ footer {
     animation-delay: 0.4s;
 }
 
-/* Dialog/Modal Styling */
+/* Modal (Dialog) Styling */
 .membership-modal {
     border: none;
-    border-radius: 12px;
+    border-radius: 15px;
     padding: 2rem;
-    max-width: 450px;
+    max-width: 500px;
     width: 90%;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .membership-modal::backdrop {
-    background-color: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .close-modal {
     float: right;
     background: none;
     border: none;
-    font-size: 1.8rem;
+    font-size: 2rem;
     cursor: pointer;
-    color: #666;
+    color: #888;
 }
