@@ -35,57 +35,59 @@
 </head>
 
 <body>
-    <header id="header-placeholder"></header>
-    <nav id="nav-placeholder"></nav>
-    <main class="join-main-content">
+    <header>
+    </header>
+
+    <nav>
+    </nav>
+
+    <main class="join-grid-container">
         <section class="form-section">
             <h1>Membership Application Form</h1>
-            <form method="get" action="thankyou.html">
-                <label title="First Name">
-                    First Name
-                    <input type="text" name="fname" required autocomplete="given-name">
+            <form method="get" action="thankyou.html" id="membership-form">
+
+                <label>First Name
+                    <input type="text" name="fname" required autocomplete="given-name"
+                        title="Please enter your first name.">
                 </label>
 
-                <label title="Last Name">
-                    Last Name
-                    <input type="text" name="lname" required autocomplete="family-name">
+                <label>Last Name
+                    <input type="text" name="lname" required autocomplete="family-name"
+                        title="Please enter your last name.">
                 </label>
 
-                <label title="Organizational Title">
-                    Organizational Title
-                    <input type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
-                        title="Minimum 7 characters, alphabetical, hyphens, and spaces only.">
+                <label>Title
+                    <input type="text" name="org-title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
+                        title="Enter your professional title (Minimum 7 characters, alphabetical, hyphens, and spaces only).">
                 </label>
 
-                <label title="Email Address">
-                    Email Address
-                    <input type="email" name="email" required autocomplete="email" placeholder="john89@gmail.com">
+                <label>Email
+                    <input type="email" name="email" required autocomplete="email" placeholder="john89@gmail.com"
+                        title="Please enter a valid email address.">
                 </label>
 
-                <label title="Mobile Phone Number">
-                    Mobile Phone
-                    <input type="tel" name="phone" required autocomplete="tel">
+                <label>Cell Phone
+                    <input type="tel" name="phone" required autocomplete="tel" placeholder="987-555-1234"
+                        title="Please enter your mobile phone number.">
                 </label>
 
-                <label title="Organization Name">
-                    Business/Organization Name
-                    <input type="text" name="orgname" required autocomplete="organization">
+                <label>Organization
+                    <input type="text" name="organization" required autocomplete="organization"
+                        title="Please enter the name of your business or organization.">
                 </label>
 
-                <label title="Membership Level">
-                    Membership Level
-                    <select name="level" required>
-                        <option value="" disabled selected>Select Level...</option>
-                        <option value="np">NP Membership (Non-Profit)</option>
+                <label>Membership Level
+                    <select name="level" required title="Please select a membership level.">
+                        <option value="" disabled selected>Select...</option>
+                        <option value="np">NP Membership</option>
                         <option value="bronze">Bronze Membership</option>
                         <option value="silver">Silver Membership</option>
                         <option value="gold">Gold Membership</option>
                     </select>
                 </label>
 
-                <label title="Organization Description">
-                    Organization Description
-                    <textarea name="description"></textarea>
+                <label>Organization Description
+                    <textarea name="description" title="Provide a brief description of your organization."></textarea>
                 </label>
 
                 <input type="hidden" name="timestamp" id="timestamp">
@@ -97,21 +99,24 @@
         <section class="levels-section">
             <h2>Membership Levels</h2>
             <div id="cards-container">
-                <div class="membership-card anim-load" id="card-np">
-                    <h3>NP Membership</h3>
-                    <button class="open-modal" data-target="modal-np">Learn More</button>
+                <div class="level-card anim-load" id="card-np">
+                    <h3>Non Profit Membership Level</h3>
+                    <button type="button" class="open-modal" data-target="modal-np">Learn More</button>
                 </div>
-                <div class="membership-card anim-load" id="card-bronze">
-                    <h3>Bronze Membership</h3>
-                    <button class="open-modal" data-target="modal-bronze">Learn More</button>
+
+                <div class="level-card anim-load" id="card-bronze">
+                    <h3>Bronze Membership Level</h3>
+                    <button type="button" class="open-modal" data-target="modal-bronze">Learn More</button>
                 </div>
-                <div class="membership-card anim-load" id="card-silver">
-                    <h3>Silver Membership</h3>
-                    <button class="open-modal" data-target="modal-silver">Learn More</button>
+
+                <div class="level-card anim-load" id="card-silver">
+                    <h3>Silver Membership Level</h3>
+                    <button type="button" class="open-modal" data-target="modal-silver">Learn More</button>
                 </div>
-                <div class="membership-card anim-load" id="card-gold">
-                    <h3>Gold Membership</h3>
-                    <button class="open-modal" data-target="modal-gold">Learn More</button>
+
+                <div class="level-card anim-load" id="card-gold">
+                    <h3>Gold Membership Level</h3>
+                    <button type="button" class="open-modal" data-target="modal-gold">Learn More</button>
                 </div>
             </div>
         </section>
@@ -120,14 +125,52 @@
     <dialog id="modal-np" class="membership-modal">
         <button class="close-modal">&times;</button>
         <h2>Non-Profit Level</h2>
-        <p>Cost: $0</p>
+        <p>Cost: $0 / Free</p>
         <ul>
-            <li>Directory Listing</li>
-            <li>Basic Training Access</li>
+            <li>Business Directory Listing</li>
+            <li>Community Calendar Access</li>
+            <li>Basic Training Opportunities</li>
         </ul>
     </dialog>
-    <footer id="footer-placeholder"></footer>
-    <script src="js/join.js"></script>
+
+    <dialog id="modal-bronze" class="membership-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Bronze Level</h2>
+        <p>Cost: Low Annual Fee</p>
+        <ul>
+            <li>Directory Listing</li>
+            <li>Social Media Mentions</li>
+            <li>Quarterly Business Trainings</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-silver" class="membership-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Silver Level</h2>
+        <p>Cost: Medium Annual Fee</p>
+        <ul>
+            <li>Enhanced Directory Placement</li>
+            <li>Event Discounts (10%)</li>
+            <li>Monthly Advertising Spotlights</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-gold" class="membership-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Gold Level</h2>
+        <p>Cost: Premium Annual Fee</p>
+        <ul>
+            <li>Homepage Feature Advertising</li>
+            <li>Full Event Sponsorships</li>
+            <li>VIP Community Luncheons</li>
+            <li>24/7 Priority Support</li>
+        </ul>
+    </dialog>
+
+    <footer>
+    </footer>
+
+    <script src="scripts/join.js"></script>
 </body>
 
 </html>
