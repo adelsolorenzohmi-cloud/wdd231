@@ -263,6 +263,20 @@ h2 {
     font-weight: bold;
 }
 
+/* --- RUBRIC ADDITIONS (Limited to Join Page) --- */
+
+@keyframes cardEntry {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .level-card {
     background-color: #eeeeee;
     border: 1px solid #ccc;
@@ -270,6 +284,7 @@ h2 {
     padding: 1.5rem;
     margin: 1.5rem 0;
     text-align: center;
+    animation: cardEntry 0.8s ease-out forwards;
 }
 
 .open-modal {
@@ -291,4 +306,12 @@ h2 {
 
 .membership-modal::backdrop {
     background: rgba(0, 0, 0, 0.6);
+}
+
+.close-modal {
+    float: right;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }

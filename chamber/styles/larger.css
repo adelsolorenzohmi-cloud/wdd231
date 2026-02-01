@@ -197,7 +197,7 @@
         padding: 0 2rem;
     }
 
-    /* JOIN PAGE: Grid Layout */
+    /* JOIN PAGE GRID (Side-by-side) */
     .join-grid-container {
         display: grid;
         grid-template-columns: 1.2fr 1fr;
