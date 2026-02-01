@@ -135,11 +135,8 @@
     .hero-box {
         position: absolute;
         top: 60%;
-        /* Matches your original vertical height */
         right: 50px;
-        /* Anchors to the RIGHT side */
         left: auto;
-        /* Ensures left doesn't override right */
         background: rgba(255, 255, 255, 0.75);
         padding: 1rem;
         border-radius: 8px;
