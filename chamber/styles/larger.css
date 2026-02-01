@@ -1,4 +1,6 @@
 @media (min-width: 700px) {
+
+    /* --- UNIVERSAL HEADER & NAV --- */
     #menu-toggle {
         display: none;
     }
@@ -10,7 +12,6 @@
         position: relative;
     }
 
-    /* Menu Alignment */
     .nav-container {
         display: flex;
         align-items: center;
@@ -62,11 +63,8 @@
         color: #ffffff;
         text-decoration: none;
         width: 120px;
-        /* Fixed width for all links */
         height: 100%;
         font-weight: 500;
-        /* Consistent weight prevents font 'shiver' */
-        /* Removed horizontal padding in favor of width */
         box-sizing: border-box;
     }
 
@@ -74,37 +72,9 @@
         background-color: #064e3b;
         color: #ffffff;
         font-weight: 500;
-        /* Must match the weight above to stay steady */
     }
 
-    /* Heading Centered */
-    h2 {
-        text-align: center;
-        margin: 3rem 0;
-        font-size: 2.5rem;
-    }
-
-    /* Grid Layout - 3 Columns*/
-    #members-container.grid-view {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
-        max-width: 1100px;
-        margin: 30px auto;
-        padding: 0 1rem;
-        box-sizing: border-box;
-    }
-
-    /* List View Desktop Alignment*/
-    #members-container.list-view {
-        display: block;
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 2rem;
-        box-sizing: border-box;
-    }
-
-    /* Footer - 2-Column Desktop Layout */
+    /* --- UNIVERSAL FOOTER --- */
     footer {
         background-color: #166534;
         color: #ffffff;
@@ -128,9 +98,35 @@
         padding-left: 3rem;
     }
 
-    /* --- HOME PAGE SPECIFIC STYLES --- */
+    /* --- PAGE-SPECIFIC STYLING -- */
 
-    /* Hero Section */
+    /* Generic Headings */
+    h2 {
+        text-align: center;
+        margin: 3rem 0;
+        font-size: 2.5rem;
+    }
+
+    /* DIRECTORY PAGE: Grid & List Layouts */
+    #members-container.grid-view {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        max-width: 1100px;
+        margin: 30px auto;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    #members-container.list-view {
+        display: block;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        box-sizing: border-box;
+    }
+
+    /* HOME PAGE: Hero & Feature Grids */
     .hero {
         position: relative;
         max-width: 1200px;
@@ -148,14 +144,11 @@
     .hero-box {
         position: absolute;
         top: 60%;
-        left: auto;
         right: 50px;
         background: rgba(255, 255, 255, 0.75);
         padding: 1rem;
         border-radius: 8px;
         width: fit-content;
-        height: fit-content;
-        display: block;
     }
 
     .cta-button {
@@ -165,10 +158,8 @@
         color: white;
         text-decoration: none;
         border-radius: 4px;
-        white-space: nowrap;
     }
 
-    /* Home Grid (Events, Weather, Forecast) */
     .home-grid {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
@@ -194,33 +185,6 @@
         font-size: 1.1rem;
     }
 
-    .card-content {
-        padding: 1rem;
-        flex-grow: 1;
-    }
-
-    .forecast .card-content {
-        padding-top: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 20px;
-    }
-
-    .forecast p {
-        margin-bottom: 80px;
-        line-height: 0;
-    }
-
-    /* Weather Specific Layout in Card */
-    .weather-main {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    /* Business Spotlights (3 Columns) */
     .spotlights {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -230,19 +194,7 @@
         padding: 0 2rem;
     }
 
-    .spotlight-card {
-        border: 1px solid #ccc;
-        background-color: #eee;
-        padding: 1rem;
-        text-align: center;
-        border-radius: 8px;
-    }
-}
-
-/* --- JOIN PAGE DESKTOP LAYOUT --- */
-@media (min-width: 700px) {
-
-    /* Using grid to separate the form and the levels section */
+    /* JOIN PAGE: Grid Layout */
     .join-grid-container {
         display: grid;
         grid-template-columns: 1.2fr 1fr;
@@ -256,9 +208,5 @@
     .join-grid-container h1 {
         grid-column: 1 / -1;
         text-align: left;
-    }
-
-    .join-grid-container h2 {
-        margin-top: 0;
     }
 }
