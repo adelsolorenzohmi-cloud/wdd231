@@ -118,7 +118,7 @@
         padding: 0 2rem;
     }
 
-    /* --- HOME PAGE HERO (Restored Position) --- */
+    /* --- HOME PAGE HERO (Corrected to Bottom-Right) --- */
     .hero {
         position: relative;
         max-width: 1200px;
@@ -135,16 +135,18 @@
     .hero-box {
         position: absolute;
         top: 60%;
-        /* Matches your original perfect code */
-        left: 50px;
-        /* Matches your original perfect code */
+        /* Matches your original vertical height */
+        right: 50px;
+        /* Anchors to the RIGHT side */
+        left: auto;
+        /* Ensures left doesn't override right */
         background: rgba(255, 255, 255, 0.75);
         padding: 1rem;
         border-radius: 8px;
         display: block;
     }
 
-    /* --- HOME PAGE GRID (Edge-to-Edge Headers) --- */
+    /* --- HOME PAGE GRID --- */
     .home-grid {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
@@ -154,23 +156,20 @@
         padding: 0 2rem;
     }
 
-    .home-grid .card {
+    .card {
         border: 1px solid #ddd;
         background-color: #f9f9f9;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
     }
 
-    .home-grid .card>h2 {
+    .card>h2 {
         background-color: #444;
         color: white;
         margin: 0;
         padding: 10px;
         text-align: center;
         font-size: 1.1rem;
-        width: 100%;
-        box-sizing: border-box;
     }
 
     .spotlights {
