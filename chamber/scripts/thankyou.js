@@ -1,31 +1,45 @@
-// Grab the current URL
-const currentUrl = window.location.href;
+// Extract and display form data from URL
+const resultsElement = document.querySelector('#results');
 
-// Split the URL into two halves at the '?'
-const everything = currentUrl.split('?');
+// 1. Get the full URL and split to find the query string
+const currentURL = window.location.href;
+const everything = currentURL.split('?');
 
-// Grab just the second half (the parameters)
-let formData = everything[1].split('&');
+if (everything.length > 1) {
+    const formData = everything[1].split('&');
 
-function show(cup) {
-    let result = "";
-    formData.forEach((element) => {
-        if (element.startsWith(cup)) {
-            result = decodeURIComponent(element.split('=')[1]).replace(/\+/g, ' ');
-        }
-    });
-    return result;
+    // Helper function to find a specific parameter value
+    function getParamValue(param) {
+        let value = "";
+        formData.forEach((element) => {
+            if (element.startsWith(param + "=")) {
+                // Decode URI to handle email symbols and replace "+" with spaces
+                value = decodeURIComponent(element.split('=')[1]).replace(/\+/g, ' ');
+            }
+        });
+        return value;
+    }
+
+    // 2. Map the Membership Level value to a readable name
+    const rawLevel = getParamValue("level");
+    const levels = {
+        "np": "Non-Profit Membership",
+        "bronze": "Bronze Membership",
+        "silver": "Silver Membership",
+        "gold": "Gold Membership"
+    };
+    const membershipLevel = levels[rawLevel] || "Not selected";
+
+    // 3. Inject the formatted results into the page
+    resultsElement.innerHTML = `
+        <p><strong>First Name:</strong> ${getParamValue("fname")}</p>
+        <p><strong>Last Name:</strong> ${getParamValue("lname")}</p>
+        <p><strong>Email:</strong> <a href="mailto:${getParamValue("email")}">${getParamValue("email")}</a></p>
+        <p><strong>Mobile Phone:</strong> ${getParamValue("phone")}</p>
+        <p><strong>Organization:</strong> ${getParamValue("organization")}</p>
+        <p><strong>Membership Level:</strong> ${membershipLevel}</p>
+        <p><strong>Timestamp:</strong> ${getParamValue("timestamp")}</p>
+    `;
+} else {
+    resultsElement.innerHTML = "<p>No submission data found. Please complete the join form.</p>";
 }
-
-// Select the results container
-const showInfo = document.querySelector('#results');
-
-// Display the data
-showInfo.innerHTML = `
-    <p><strong>Name:</strong> ${show("fname")} ${show("lname")}</p>
-    <p><strong>Email:</strong> <a href="mailto:${show("email")}">${show("email")}</a></p>
-    <p><strong>Phone:</strong> ${show("phone")}</p>
-    <p><strong>Organization:</strong> ${show("org")}</p>
-    <p><strong>Membership Level:</strong> ${show("membership")}</p>
-    <p><strong>Timestamp:</strong> ${show("timestamp")}</p>
-`;
