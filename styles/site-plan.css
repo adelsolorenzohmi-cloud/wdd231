@@ -1,0 +1,195 @@
+/* -----------------------------------------------------------
+   GOOGLE FONTS
+   ----------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+/* -----------------------------------------------------------
+   ROOT VARIABLES (Your Color Scheme)
+   ----------------------------------------------------------- */
+:root {
+    --primary-color: #AB001A;
+    /* Your selected Crimson Red */
+    --secondary-color: #1D1D1D;
+    /* Dark Charcoal for text/contrast */
+    --background-color: #F9F9F9;
+    /* Off-white for page background */
+    --white: #FFFFFF;
+    --accent-gray: #E0E0E0;
+
+    /* Typography */
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+/* -----------------------------------------------------------
+   BASE STYLES
+   ----------------------------------------------------------- */
+body {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+/* -----------------------------------------------------------
+   HEADER & FOOTER
+   ----------------------------------------------------------- */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-weight: 600;
+    margin-top: 0.5rem;
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    margin-top: 3rem;
+}
+
+/* -----------------------------------------------------------
+   MAIN CONTENT
+   ----------------------------------------------------------- */
+main {
+    max-width: 900px;
+    margin: -2rem auto 2rem auto;
+    /* Overlap effect */
+    padding: 2.5rem;
+    background: var(--white);
+    border-top: 8px solid var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-gray);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+p,
+ul {
+    margin-bottom: 1rem;
+}
+
+/* -----------------------------------------------------------
+   WIREFRANE COMPONENT STYLING
+   ----------------------------------------------------------- */
+.wireframe {
+    background: #f0f0f0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-family: monospace;
+    color: #555;
+}
+
+/* Individual Wireframe Blocks */
+.wf-header,
+.wf-nav,
+.wf-hero,
+.wf-content,
+.wf-footer,
+.wf-sidebar,
+.wf-grid-item {
+    border: 1px dashed var(--primary-color);
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    background: var(--white);
+}
+
+/* Mobile Wireframe (Stacked) */
+.mobile-wf {
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Desktop Wireframe (Grid/Flex) */
+.desktop-wf {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    gap: 0;
+}
+
+.desktop-wf .wf-header {
+    grid-column: 1 / 2;
+}
+
+.desktop-wf .wf-nav {
+    grid-column: 2 / 4;
+}
+
+.desktop-wf .wf-hero {
+    grid-column: 1 / 4;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff5f5;
+}
+
+.desktop-wf .wf-content-area {
+    grid-column: 1 / 4;
+    display: flex;
+    gap: 5px;
+}
+
+.desktop-wf .wf-content {
+    flex: 2;
+    height: 120px;
+}
+
+.desktop-wf .wf-sidebar {
+    flex: 1;
+    height: 120px;
+}
+
+.desktop-wf .wf-footer {
+    grid-column: 1 / 4;
+}
+
+/* Responsive utility for the Site Plan itself */
+@media (max-width: 600px) {
+    main {
+        margin: 0;
+        padding: 1.5rem;
+    }
+
+    .desktop-wf {
+        display: none;
+        /* Hide desktop wireframe on small plan viewers */
+    }
+}
