@@ -4,18 +4,13 @@ import { items } from '../data/discover.mjs';
 const gridContainer = document.querySelector('#discover-grid');
 
 function displayItems(itemsList) {
-    // Clear container once before starting the loop
     gridContainer.innerHTML = "";
 
     itemsList.forEach((item, index) => {
-        // Create the section element for the card
         const card = document.createElement('section');
         card.classList.add('discover-card');
-
-        // Unique ID for grid-template-areas targeting
         card.id = `area${index + 1}`;
 
-        // Build the card structure
         card.innerHTML = `
             <h2>${item.title}</h2>
             <figure>
@@ -26,12 +21,34 @@ function displayItems(itemsList) {
             <button class="learn-more">Learn More</button>
         `;
 
-        // Add card to the grid container
         gridContainer.appendChild(card);
     });
 }
 
-// --- 2. LOCALSTORAGE VISITOR MESSAGE ---
+// --- 2. MOBILE MENU TOGGLE ---
+function setupHamburgerMenu() {
+    const menuBtn = document.querySelector('#menu-toggle');
+    const nav = document.querySelector('#nav-list');
+
+    if (menuBtn && nav) {
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('show');
+            menuBtn.textContent = nav.classList.contains('show') ? 'X' : '☰';
+        });
+    }
+}
+
+// --- 3. LEARN MORE BUTTON LISTENER ---
+function setupLearnMoreListeners() {
+    gridContainer.addEventListener('click', (event) => {
+        if (event.target.classList.contains('learn-more')) {
+            const cardTitle = event.target.closest('.discover-card').querySelector('h2').textContent;
+            alert(`Discovery details for ${cardTitle} coming soon!`);
+        }
+    });
+}
+
+// --- 4. LOCALSTORAGE VISITOR MESSAGE ---
 const visitDisplay = document.querySelector("#visitor-message");
 
 function setVisitorMessage() {
@@ -40,10 +57,8 @@ function setVisitorMessage() {
     const today = Date.now();
 
     if (!lastVisit) {
-        // First time visit
         visitDisplay.textContent = "Welcome! Let us know if you have any questions.";
     } else {
-        // Calculate difference in days
         const daysPassed = (today - parseInt(lastVisit)) / msPerDay;
 
         if (daysPassed < 1) {
@@ -54,12 +69,10 @@ function setVisitorMessage() {
             visitDisplay.textContent = `You last visited ${roundedDays} ${dayText} ago.`;
         }
     }
-
-    // Always update localStorage with the current visit time
     localStorage.setItem("lastVisit-ls", today);
 }
 
-// --- 3. FOOTER DATES ---
+// --- 5. FOOTER DATES ---
 function setFooterInfo() {
     const yearSpan = document.querySelector("#currentYear");
     const modSpan = document.querySelector("#lastModified");
@@ -71,6 +84,8 @@ function setFooterInfo() {
 // --- INITIALIZE PAGE ---
 document.addEventListener("DOMContentLoaded", () => {
     displayItems(items);
+    setupHamburgerMenu();
+    setupLearnMoreListeners();
     setVisitorMessage();
     setFooterInfo();
 });
