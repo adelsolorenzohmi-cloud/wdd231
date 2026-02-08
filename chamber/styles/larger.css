@@ -196,17 +196,7 @@
 }
 
 /* --- DISCOVER PAGE --- */
-.visitor-banner {
-    background-color: #064e3b;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-}
-
 .discover-container {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     max-width: 1200px;
@@ -219,94 +209,15 @@
         "area8 area8 area8";
 }
 
-/* Grid Area Assignments (Matches JavaScript IDs) */
-#area1 {
-    grid-area: area1;
-}
-
-#area2 {
-    grid-area: area2;
-}
-
-#area3 {
-    grid-area: area3;
-}
-
-#area4 {
-    grid-area: area4;
-}
-
-#area5 {
-    grid-area: area5;
-}
-
-#area6 {
-    grid-area: area6;
-}
-
-#area7 {
-    grid-area: area7;
-}
-
-#area8 {
-    grid-area: area8;
-}
-
-.discover-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.discover-card h2 {
-    font-size: 1.4rem;
-    margin: 0.5rem 0;
-    color: #166534;
-}
-
-.discover-card figure {
-    margin: 0;
-    overflow: hidden;
-    border-radius: 4px;
-    width: 300px;
-    height: 200px;
-}
-
-.discover-card img {
-    width: 100%;
+#item-5 img {
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease, filter 0.4s ease;
 }
 
 .discover-card img:hover {
-    transform: scale(1.1);
-    filter: brightness(80%) sepia(30%);
-}
-
-.discover-card address {
-    font-style: normal;
-    font-weight: bold;
-    margin: 10px 0;
-    color: #444;
-}
-
-.discover-card button {
-    margin-top: auto;
-    padding: 0.8rem 1.5rem;
-    background-color: #166534;
-    color: white;
-    border: none;
-    cursor: pointer;
+    transform: scale(1.05);
     transition: 0.3s;
 }
 
 .discover-card button:hover {
     background-color: #064e3b;
-}
 }

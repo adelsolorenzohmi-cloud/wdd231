@@ -263,7 +263,7 @@ h2 {
     font-weight: bold;
 }
 
-/* --- RUBRIC ADDITIONS (Limited to Join Page) --- */
+/* --- RUBRIC ADDITIONS---*/
 
 @keyframes cardEntry {
     from {
@@ -375,7 +375,8 @@ h2 {
     border-bottom: none;
 }
 
-/* --- DISCOVER PAGE: SMALL VIEW --- */
+
+/* ---DISCOVER PAGE ---*/
 .visitor-banner {
     background-color: #f0fdf4;
     color: #166534;
@@ -390,7 +391,6 @@ h2 {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 1rem;
-    /* Map: One area per row */
     grid-template-areas:
         "area1" "area2" "area3" "area4"
         "area5" "area6" "area7" "area8";
@@ -439,11 +439,28 @@ h2 {
     align-items: center;
 }
 
+.discover-card h2 {
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 .discover-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 4px;
+}
+
+.discover-card button {
+    margin-top: auto;
+    padding: 0.8rem 1.5rem;
+    background-color: #166534;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 @media (min-width: 641px) and (max-width: 1024px) {
