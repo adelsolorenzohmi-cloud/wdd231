@@ -396,7 +396,7 @@ h2 {
         "area5" "area6" "area7" "area8";
 }
 
-/* Link IDs to Areas */
+/* Link IDs to Areas - Defined once here */
 #item-1 {
     grid-area: area1;
 }
@@ -437,14 +437,17 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
+/* TITLE ALIGNMENT*/
 .discover-card h2 {
-    min-height: 4rem;
+    min-height: 4.5rem;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 .discover-card img {
@@ -463,6 +466,7 @@ h2 {
     cursor: pointer;
 }
 
+/* Tablet View (641px - 1024px) */
 @media (min-width: 641px) and (max-width: 1024px) {
     .discover-container {
         grid-template-columns: 1fr 1fr;

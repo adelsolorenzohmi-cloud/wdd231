@@ -196,28 +196,32 @@
 }
 
 /* --- DISCOVER PAGE --- */
-.discover-container {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto 4rem auto;
-    padding: 0 2rem;
-    grid-template-areas:
-        "area1 area2 area3"
-        "area4 area4 area5"
-        "area6 area7 area5"
-        "area8 area8 area8";
-}
+@media (min-width: 1025px) {
+    .discover-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto 4rem auto;
+        padding: 0 2rem;
+        grid-template-areas:
+            "area1 area2 area3"
+            "area4 area4 area5"
+            "area6 area7 area5"
+            "area8 area8 area8";
+    }
 
-#item-5 img {
-    height: 100%;
-}
+    #item-5 img {
+        height: 100%;
+        max-height: none;
+    }
 
-.discover-card img:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
+    .discover-card img:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
 
-.discover-card button:hover {
-    background-color: #064e3b;
+    .discover-card button:hover {
+        background-color: #064e3b;
+    }
 }
