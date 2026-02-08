@@ -386,6 +386,15 @@ h2 {
     font-weight: 600;
 }
 
+.discover-intro {
+    text-align: center;
+    margin: 1rem auto 2rem auto;
+    padding: 0 1rem;
+    max-width: 900px;
+    line-height: 1.6;
+    font-size: large;
+}
+
 .discover-container {
     display: grid;
     grid-template-columns: 1fr;
