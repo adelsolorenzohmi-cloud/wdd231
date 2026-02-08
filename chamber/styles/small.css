@@ -374,3 +374,85 @@ h2 {
 #results p:last-child {
     border-bottom: none;
 }
+
+/* --- DISCOVER PAGE: SMALL VIEW --- */
+.visitor-banner {
+    background-color: #f0fdf4;
+    color: #166534;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #166534;
+    font-weight: 600;
+}
+
+.discover-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 1rem;
+    /* Map: One area per row */
+    grid-template-areas:
+        "area1" "area2" "area3" "area4"
+        "area5" "area6" "area7" "area8";
+}
+
+/* Link IDs to Areas */
+#item-1 {
+    grid-area: area1;
+}
+
+#item-2 {
+    grid-area: area2;
+}
+
+#item-3 {
+    grid-area: area3;
+}
+
+#item-4 {
+    grid-area: area4;
+}
+
+#item-5 {
+    grid-area: area5;
+}
+
+#item-6 {
+    grid-area: area6;
+}
+
+#item-7 {
+    grid-area: area7;
+}
+
+#item-8 {
+    grid-area: area8;
+}
+
+.discover-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discover-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "area1 area2"
+            "area3 area4"
+            "area5 area6"
+            "area7 area8";
+    }
+}

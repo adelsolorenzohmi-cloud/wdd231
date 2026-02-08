@@ -194,3 +194,165 @@
         text-align: left;
     }
 }
+
+/* --- DISCOVER PAGE --- */
+.visitor-banner {
+    background-color: #064e3b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+/* Named Grid Areas Strategy */
+.discover-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 3 columns for large screens */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+    padding: 0 2rem;
+    /* Defining the map: naming each item-ID specifically */
+    grid-template-areas:
+        "item1 item2 item3"
+        "item4 item4 item5"
+        "item6 item7 item8";
+}
+
+/* Assigning the IDs generated in discover.js to the grid areas */
+#item-1 {
+    grid-area: item1;
+}
+
+#item-2 {
+    grid-area: item2;
+}
+
+#item-3 {
+    grid-area: item3;
+}
+
+#item-4 {
+    grid-area: item4;
+}
+
+/* This one will span 2 columns based on the map above */
+#item-5 {
+    grid-area: item5;
+}
+
+#item-6 {
+    grid-area: item6;
+}
+
+#item-7 {
+    grid-area: item7;
+}
+
+#item-8 {
+    grid-area: item8;
+}
+
+.discover-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.discover-card h2 {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    color: #166534;
+}
+
+.discover-card figure {
+    margin: 0;
+    overflow: hidden;
+    /* Important for the hover effect scaling */
+    width: 300px;
+    height: 200px;
+}
+
+.discover-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Requirement: CSS Image Hover Effect (Desktop Only) */
+.discover-card img:hover {
+    transform: scale(1.1);
+    filter: brightness(80%) sepia(30%);
+}
+
+.discover-card address {
+    font-style: normal;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #444;
+}
+
+.discover-card button {
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: #166534;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.discover-card button:hover {
+    background-color: #064e3b;
+}
+
+/* --- DISCOVER PAGE: LARGE VIEW --- */
+.visitor-banner {
+    background-color: #064e3b;
+    color: white;
+}
+
+.discover-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    /* Map: Complex 3-column layout */
+    grid-template-areas:
+        "area1 area2 area3"
+        "area4 area4 area5"
+        "area6 area7 area5"
+        "area8 area8 area8";
+}
+
+/* Desktop-only Image Effects */
+.discover-card figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.discover-card img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.discover-card img:hover {
+    transform: scale(1.05);
+    filter: saturate(1.2) brightness(90%);
+}
+
+.discover-card button {
+    background-color: #166534;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}

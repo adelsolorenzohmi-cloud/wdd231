@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Nahualá | Nahualá Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Discover the demographics, cultural heritage, and local wonders of Nahualá, Sololá. Explore our community's heart and industry.">
+    <meta name="author" content="Adelso Tzep Chox">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Discover Nahualá - Heritage and Industry">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adelosolorenzohmi-cloud.github.io/wdd231/chamber/discover.html">
+    <meta property="og:image" content="https://adelsolorenzohmi-cloud.github.io/wdd231/chamber/chamber-og.jpg">
+    <meta property="og:description"
+        content="Learn about the beautiful area of Nahualá, Guatemala. From traditional stone carving to the breathtaking views of Chuiraxamoló.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 700px)">
+
+    <script src="scripts/discover.js" type="module" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="brand">
+                <img src="images/logo.jpg" alt="Nahualá Chamber Logo" class="logo">
+                <h1>Nahualá Chamber</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside id="visitor-message" class="visitor-banner"></aside>
+
+        <section class="discover-intro">
+            <h2>Experience Nahualá</h2>
+            <p>Welcome to the highlands of Sololá. Our community is built on a rich tapestry of K'iche' culture,
+                specialized craftsmanship, and natural beauty.</p>
+        </section>
+
+        <div id="discover-grid" class="discover-container">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><strong>Nahualá Chamber of Commerce</strong></p>
+                <p>Nahualá, Sololá, Guatemala</p>
+                <p>info@nahuala.org | (502) 3555-2300</p>
+            </div>
+
+            <div class="footer-info">
+                <p>&copy; <span id="currentYear"></span> | Adelso Tzep Chox | WDD 231</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
