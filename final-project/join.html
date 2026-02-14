@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Ritmo Latino Fest</title>
+
+    <meta name="description"
+        content="Become a part of the Ritmo Latino Fest community. Register now to join the celebration in Viña del Mar.">
+    <meta name="author" content="Adelso Tzep">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Ritmo Latino Fest | Join the Celebration">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adelosolorenzohmi-cloud.github.io/wdd231/final-project/join.html">
+    <meta property="og:image" content="images/ritmo-latino-fest.webp">
+    <meta property="og:description"
+        content="Don't miss out on the rhythm! Register today to secure your spot at the most vibrant festival in Chile.">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <nav class="nav-container">
+                <div class="brand">
+                    <img src="images/logo.png" alt="Ritmo Latino Fest Logo" class="logo">
+                    <h1>Ritmo Latino Fest</h1>
+                </div>
+
+                <button id="hamburger" aria-label="Menu Toggle">☰</button>
+
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lineup.html">Lineup</a></li>
+                    <li><a href="join.html" class="active">Join Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 style="text-align:center; color:var(--primary-color);">Join the Fest</h2>
+            <form action="thankyou.html" method="get"
+                style="max-width:500px; margin:2rem auto; display:flex; flex-direction:column; gap:1.5rem; background:#f9f9f9; padding:2rem; border-radius:8px; border:1px solid #ddd;">
+                <label>Name: <input type="text" name="fname" required style="width:100%; padding:10px;"></label>
+                <label>Email: <input type="email" name="email" required style="width:100%; padding:10px;"></label>
+                <button type="submit"
+                    style="background:var(--primary-color); color:white; padding:15px; border:none; font-weight:bold; cursor:pointer;">Register
+                    Now</button>
+            </form>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-contact">
+                    <p><strong>Ritmo Latino Fest</strong></p>
+                    <p>Viña del Mar, Chile</p>
+                    <p>info@ritmolatinofest.com | (56) 2 2333-4500</p>
+                </div>
+
+                <div class="footer-info">
+                    <p>&copy; <span id="currentYear"></span> | Adelso Tzep Chox | <a href="attributions.html"
+                            class="footer-link">Credits</a></p>
+                    <p id="lastModified"></p>
+                </div>
+            </div>
+        </footer>
+        <script src="scripts/main.js" type="module"></script>
+    </body>
+
+</html>

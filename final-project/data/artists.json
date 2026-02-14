@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Bomba Estéreo",
+        "genre": "Electro Tropical",
+        "country": "Colombia",
+        "bio": "A fusion of electronic sounds and Caribbean rhythms.",
+        "image": "images/bomba-estereo.webp"
+    },
+    {
+        "id": 2,
+        "name": "Bad Bunny",
+        "genre": "Reggaeton",
+        "country": "Puerto Rico",
+        "bio": "Global icon of the urban genre.",
+        "image": "images/bad-bunny.webp"
+    },
+    {
+        "id": 3,
+        "name": "Natalia Lafourcade",
+        "genre": "Folk Pop",
+        "country": "Mexico",
+        "bio": "Renowned for her deep roots in Latin American folk.",
+        "image": "images/natalia-lafourcade.webp"
+    },
+    {
+        "id": 4,
+        "name": "Marc Anthony",
+        "genre": "Salsa",
+        "country": "USA",
+        "bio": "The king of modern salsa music.",
+        "image": "images/marc-anthony.webp"
+    },
+    {
+        "id": 5,
+        "name": "Karol G",
+        "genre": "Urban",
+        "country": "Colombia",
+        "bio": "Leading voice in the reggaeton scene.",
+        "image": "images/karol-g.webp"
+    },
+    {
+        "id": 6,
+        "name": "Jorge Drexler",
+        "genre": "Indie",
+        "country": "Uruguay",
+        "bio": "Oscar-winning singer-songwriter.",
+        "image": "images/jorge-drexler.webp"
+    },
+    {
+        "id": 7,
+        "name": "Mon Laferte",
+        "genre": "Alternative",
+        "country": "Chile",
+        "bio": "Multi-instrumentalist with a powerful vocal range.",
+        "image": "images/laferte.webp"
+    },
+    {
+        "id": 8,
+        "name": "Rosalía",
+        "genre": "Flamenco Pop",
+        "country": "Spain",
+        "bio": "Innovator of the Motomami sound.",
+        "image": "images/rosalia.webp"
+    },
+    {
+        "id": 9,
+        "name": "Juan Luis Guerra",
+        "genre": "Merengue",
+        "country": "Dominican Republic",
+        "bio": "Legend of tropical music.",
+        "image": "images/juan-luis-guerra.webp"
+    },
+    {
+        "id": 10,
+        "name": "Camilo",
+        "genre": "Latin Pop",
+        "country": "Colombia",
+        "bio": "Known for his unique style and catchy melodies.",
+        "image": "images/camilo.webp"
+    },
+    {
+        "id": 11,
+        "name": "Residente",
+        "genre": "Rap",
+        "country": "Puerto Rico",
+        "bio": "Lyrical genius and social activist.",
+        "image": "images/residente.webp"
+    },
+    {
+        "id": 12,
+        "name": "Shakira",
+        "genre": "Pop",
+        "country": "Colombia",
+        "bio": "Global superstar and dance icon.",
+        "image": "images/shakira.webp"
+    },
+    {
+        "id": 13,
+        "name": "J Balvin",
+        "genre": "Reggaeton",
+        "country": "Colombia",
+        "bio": "The prince of reggaeton.",
+        "image": "images/j-balvin.webp"
+    },
+    {
+        "id": 14,
+        "name": "Carlos Vives",
+        "genre": "Vallenato",
+        "country": "Colombia",
+        "bio": "Modernizer of traditional Vallenato.",
+        "image": "images/carlos-vives.webp"
+    },
+    {
+        "id": 15,
+        "name": "Anitta",
+        "genre": "Funk Carioca",
+        "country": "Brazil",
+        "bio": "Brazil biggest international pop star.",
+        "image": "images/anitta.webp"
+    }
+]

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Complete | Ritmo Latino Fest</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .thank-you-container {
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .thank-you-container h2 {
+            font-size: 2.5rem;
+            border: none;
+        }
+
+        .user-data {
+            background-color: var(--background-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 1rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 10px 20px;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ritmo Latino Fest</h1>
+    </header>
+
+    <main>
+        <section class="thank-you-container">
+            <h2>¡Gracias por unirte!</h2>
+            <p>Your registration for the 2026 festival updates was successful.</p>
+
+            <div class="user-data">
+                <p>Welcome to the community, <strong id="user-name">Friend</strong>!</p>
+                <p>We've sent a confirmation to the email address you provided.</p>
+            </div>
+
+            <br>
+            <a href="index.html" class="back-home">Return to Home Page</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ritmo Latino Fest | Adelso Tzep</p>
+    </footer>
+
+    <script>
+        // Simple script to pull the first name from the URL (GET method)
+        const urlParams = new URLSearchParams(window.location.search);
+        const firstName = urlParams.get('fname');
+        if (firstName) {
+            document.getElementById('user-name').textContent = firstName;
+        }
+    </script>
+</body>
+
+</html>

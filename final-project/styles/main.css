@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #AB001A;
+    --secondary-color: #1D1D1D;
+    --white: #FFFFFF;
+    --accent-gray: #E0E0E0;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- HEADER & NAVIGATION --- */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    margin: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 45px;
+    height: auto;
+}
+
+#hamburger {
+    display: block;
+    margin-left: auto;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#primary-nav.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1.2rem;
+    text-align: center;
+    display: block;
+    font-weight: 500;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem 0;
+    color: #800020;
+}
+
+/* Mobile Wayfinding */
+nav a.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+}
+
+/* --- COMPONENTS --- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.info-card {
+    border: 1px solid var(--accent-gray);
+    border-radius: 8px;
+    background: #fdfdfd;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.info-card h3 {
+    background: var(--secondary-color);
+    color: white;
+    margin: 0;
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #800020;
+    color: white;
+    padding: 1.5rem 1rem;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.footer-contact p,
+.footer-info p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #ffcccb;
+    text-decoration: none;
+}

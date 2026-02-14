@@ -1,0 +1,108 @@
+@media (min-width: 768px) {
+    header {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        padding: 1.8rem 5% !important;
+        height: auto;
+        background-color: var(--primary-color);
+    }
+
+    footer {
+        padding: 2rem 5% !important;
+    }
+
+    .footer-container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-contact {
+        text-align: left !important;
+        flex: 1;
+    }
+
+    .footer-info {
+        text-align: right !important;
+        flex: 1;
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+        padding-left: 2rem;
+    }
+
+    .brand {
+        display: flex !important;
+        align-items: center !important;
+        gap: 20px !important;
+        flex: 1 !important;
+    }
+
+    header h1 {
+        font-size: 2rem !important;
+        letter-spacing: 1px;
+    }
+
+    .logo {
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    nav {
+        display: flex !important;
+        justify-content: flex-end !important;
+        flex: 1 !important;
+        margin-top: 18px;
+    }
+
+    #primary-nav {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 4rem !important;
+        list-style: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    nav ul {
+        position: static !important;
+        background: none !important;
+        box-shadow: none !important;
+        width: auto !important;
+    }
+
+    nav a {
+        color: white !important;
+        text-decoration: none !important;
+        font-size: 1.3rem !important;
+        padding: 10px 0 !important;
+        white-space: nowrap !important;
+        transition: 0.3s;
+    }
+
+    nav a.active {
+        background-color: transparent !important;
+        border-bottom: 4px solid white !important;
+        font-weight: 700 !important;
+    }
+
+    #hamburger {
+        display: none !important;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .hero-img {
+        width: 100% !important;
+        height: 400px !important;
+        object-fit: contain !important;
+
+    }
+}
