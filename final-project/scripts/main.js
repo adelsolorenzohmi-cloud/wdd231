@@ -51,7 +51,7 @@ if (weatherBox && currentTemp) {
             weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${iconCode}@2x.png`);
             weatherIcon.setAttribute('alt', data.weather[0].description);
 
-            const caption = weatherBox.querySelector('figcaption');
+            const caption = document.querySelector('#weather-desc');
             if (caption) caption.textContent = data.weather[0].description;
 
         } catch (e) {
