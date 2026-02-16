@@ -159,3 +159,68 @@ footer {
     color: #ffcccb;
     text-decoration: none;
 }
+
+.hero-box {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-cta-container {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.btn-hero-join {
+    background: #AB001A;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 2px solid white;
+    display: inline-block;
+}
+
+.info-grid {
+    margin-top: 2rem;
+}
+
+.temp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#weather-desc {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#humidity {
+    text-align: center;
+}
+
+#last-visit {
+    text-align: center;
+    font-style: italic;
+    margin-top: 2rem;
+}
+
+.info-card h2 {
+    background: var(--secondary-color);
+    color: white;
+    margin: 0;
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: var(--heading-font);
+}
