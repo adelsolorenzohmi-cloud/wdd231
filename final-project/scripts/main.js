@@ -34,6 +34,7 @@ const weatherBox = document.querySelector('#weather-box');
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const humidityDisplay = document.querySelector('#humidity');
+const weatherDesc = document.querySelector('#weather-desc');
 
 if (weatherBox && currentTemp) {
     const url = 'https://api.openweathermap.org/data/2.5/weather?q=Vina%20del%20Mar,cl&units=metric&appid=73d8de1ab116352097aee2f56a2da362';
@@ -51,7 +52,8 @@ if (weatherBox && currentTemp) {
             weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${iconCode}@2x.png`);
             weatherIcon.setAttribute('alt', data.weather[0].description);
 
-            const caption = document.querySelector('#weather-desc');
+            //const caption = document.querySelector('#weather-desc');
+            const caption = weatherDesc;
             if (caption) caption.textContent = data.weather[0].description;
 
         } catch (e) {
