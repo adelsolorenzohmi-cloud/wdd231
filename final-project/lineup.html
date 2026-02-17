@@ -27,7 +27,6 @@
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
 </head>
 
-
 <body>
     <header>
         <nav class="nav-container">
@@ -45,17 +44,17 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2 style="color:var(--primary-color);">Artist Lineup</h2>
-        <div id="artist-grid"
-            style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px;"></div>
 
-        <dialog id="artist-modal" style="border:none; border-radius:8px; padding:2rem; max-width:500px;">
+    <main>
+        <h2 class="lineup-title">Artist Lineup</h2>
+        <div id="artist-grid" class="grid-container"></div>
+
+        <dialog id="artist-modal" class="modal-box">
             <div id="modal-info"></div>
-            <button id="close-modal"
-                style="margin-top:20px; padding:10px 20px; background:var(--secondary-color); color:white; border:none; cursor:pointer;">Close</button>
+            <button id="close-modal" class="modal-close-btn">Close</button>
         </dialog>
     </main>
+
     <footer>
         <div class="footer-container">
             <div class="footer-contact">
@@ -71,6 +70,7 @@
             </div>
         </div>
     </footer>
+
     <script src="scripts/main.js" type="module"></script>
     <script src="scripts/lineup.js" type="module"></script>
 </body>
