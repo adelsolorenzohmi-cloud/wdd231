@@ -266,11 +266,6 @@ footer {
     filter: brightness(1.1);
 }
 
-/* --- Footer Link (from previous fix) --- */
-.footer-link {
-    color: inherit;
-    text-decoration: underline;
-}
 
 /* --- Lineup Page Styling --- */
 .lineup-title {
